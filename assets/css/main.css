@@ -1,11 +1,19 @@
 @import '../fonts/fonts.css';
+@import '../../components/page/page.css';
+@import '../../components/header/header.css';
+@import '../../components/footer/footer.css';
+@import '../../components/preview/preview.css';
+@import '../../components/container/container.css';
 
 :root {
     --white: #ffffff;
     --black: #212429;
     --pink: #F784AD;
     --purple: #7048E8;
-    --blue: #374FC7;
+    --dark-purple: #5028C6;
+    --blue: #4263EB;
+    --preview-background: #F9FAFC;
+    --dark-blue: #2342C0;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
