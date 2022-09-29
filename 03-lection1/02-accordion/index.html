@@ -1,18 +1,45 @@
 <!DOCTYPE html>
-<!-- Страница с аккордеоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
-    </body>
+  <head>
+      <link rel="stylesheet" href="../../assets/css/main.css">
+      <link rel="stylesheet" href="../../assets/css/normalize.css">
+      <link rel="stylesheet" href="./accordion.css">
+  </head>
+  <body>
+    <div class="accordion">
+      <details class="accordion__item">
+        <summary class="accordion__summary">
+          <span class="accordion__title">Accordion item 1</span>
+          <img src="../../assets/images/accordion-arrow.svg" alt="show-content" class="accordion__arrow"> 
+        </summary>
+        <p class="accordion__content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Blanditiis eligendi non, aliquam, necessitatibus earum assumenda perspiciatis
+          fugiat error suscipit inventore, iste quis nisi neque accusantium quo dolorum. Perspiciatis, nobis sapiente?
+        </p>
+      </details>
+      <details class="accordion__item">
+        <summary class="accordion__summary">
+          <span class="accordion__title">Accordion item 2</span>
+          <img src="../../assets/images/accordion-arrow.svg" alt="show-content" class="accordion__arrow">
+        </summary>
+        <p class="accordion__content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Blanditiis eligendi non, aliquam, necessitatibus earum assumenda perspiciatis
+          fugiat error suscipit inventore, iste quis nisi neque accusantium quo dolorum. Perspiciatis, nobis sapiente?
+        </p>
+      </details>
+      <details class="accordion__item">
+        <summary class="accordion__summary">
+          <span class="accordion__title">Accordion item 3</span>
+          <img src="../../assets/images/accordion-arrow.svg" alt="show-content" class="accordion__arrow">
+        </summary>
+        <p class="accordion__content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Blanditiis eligendi non, aliquam, necessitatibus earum assumenda perspiciatis
+          fugiat error suscipit inventore, iste quis nisi neque accusantium quo dolorum. Perspiciatis, nobis sapiente?
+        </p>
+      </details>
+    </div>
+  </body>
 </html>
