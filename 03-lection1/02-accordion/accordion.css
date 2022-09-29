@@ -1,5 +1,5 @@
-.accordion {
-  max-width:730px;
+.demo__accordion {
+  max-width: 730px;
   padding: 10px;
 }
 
@@ -7,7 +7,7 @@
   background: var(--white);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
-  padding: 23px 31px 23px 31px; 
+  padding: 24px 32px 24px 32px; 
   box-sizing: border-box;
 }
 
@@ -34,6 +34,10 @@
   transition-duration: 200ms;
 }
 
+.accordion__item[open] { 
+  padding-bottom: 32px;
+}
+
 .accordion__item[open] .accordion__arrow { 
   transform: rotate(180deg);
 }
@@ -46,9 +50,8 @@
   line-height: 24px;
   overflow-wrap: break-word;
   color: var(--grey-4);
-  margin: 0 auto;
-  padding-top: 16px;
-  padding-right: 16px;
+  margin-top: 16px;
+  margin-right: 18px;
 }
 
 .accordion__item > .accordion__summary {
