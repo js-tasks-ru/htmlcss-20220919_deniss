@@ -1,0 +1,39 @@
+.demo__histogram {
+  width: 354px;
+  height: 185px;
+  margin: 10px;
+}
+
+.histogram {
+  background: var(--white);
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+}
+
+.histogram__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* .dashboard__charts {
+    --chart-height: 50;
+  }
+
+  .column-chart__chart {
+    width: 100%;
+    height: calc(var(--chart-height) * 1px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .column-chart__chart div {
+    height: calc(var(--value) * 1px);
+    background-color: var(--chart-column-color);
+    min-width: 1px;
+    flex-grow: 1;
+    margin: 0 0 0 1px;
+  } */
