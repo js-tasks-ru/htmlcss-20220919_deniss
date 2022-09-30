@@ -1,4 +1,11 @@
 .preview {
-    height: 400px;
-    background-color: var(--preview-background);
+  background-color: var(--preview-background);
+  padding-top: 68px;
+  padding-bottom: 204px;
+}
+
+.preview__cards {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
 }
