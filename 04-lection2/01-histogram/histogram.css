@@ -1,39 +1,59 @@
-.demo__histogram {
-  width: 354px;
-  height: 185px;
-  margin: 10px;
-}
-
 .histogram {
   background: var(--white);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
+  box-sizing: border-box;
+  padding: 16px 24px 24px 24px;
+  --max-column-height: 50px;
 }
 
 .histogram__header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
+.histogram__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  opacity: 0.8;
+  margin: 0;
+}
 
+.histogram__link {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--blue);
+  margin-top: 3px;
+}
 
-/* .dashboard__charts {
-    --chart-height: 50;
-  }
+.histogram__total {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--black);
+  margin: 6px 0 39px 0;
+}
 
-  .column-chart__chart {
-    width: 100%;
-    height: calc(var(--chart-height) * 1px);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  
-  .column-chart__chart div {
-    height: calc(var(--value) * 1px);
-    background-color: var(--chart-column-color);
-    min-width: 1px;
-    flex-grow: 1;
-    margin: 0 0 0 1px;
-  } */
+.histogram__column-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: var(--max-column-height);
+  padding-left: 1px;
+}
+
+.histogram__column {
+  min-width: 1px;
+  width: 100%;
+  margin-left: 1px;
+  background-color: var(--blue);
+}
