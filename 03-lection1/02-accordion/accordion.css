@@ -1,9 +1,9 @@
-.demo__accordion {
-  max-width: 730px;
-  padding: 10px;
-}
-
 .accordion__item {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   background: var(--white);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
@@ -22,11 +22,6 @@
 }
 
 .accordion__title {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   color: var(--black);
 }
 
@@ -43,11 +38,6 @@
 }
 
 .accordion__content {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   overflow-wrap: break-word;
   color: var(--grey-4);
   margin-top: 16px;

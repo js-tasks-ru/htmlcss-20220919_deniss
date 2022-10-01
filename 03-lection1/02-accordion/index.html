@@ -4,12 +4,18 @@
       <link rel="stylesheet" href="../../assets/css/main.css">
       <link rel="stylesheet" href="../../assets/css/normalize.css">
       <link rel="stylesheet" href="./accordion.css">
+      <style>
+        .accordion-preview {
+          max-width: 730px;
+          padding: 10px;
+        }
+      </style>
   </head>
-  <body>
-    <div class="accordion demo__accordion">
+  <body class="accordion-preview">
+    <div class="accordion">
       <details class="accordion__item">
         <summary class="accordion__summary">
-          <span class="accordion__title">Accordion item 1</span>
+          <p class="accordion__title">Accordion item 1</p>
           <img src="../../assets/images/accordion-arrow.svg" alt="show-content" class="accordion__arrow"> 
         </summary>
         <p class="accordion__content">
@@ -18,7 +24,7 @@
       </details>
       <details class="accordion__item">
         <summary class="accordion__summary">
-          <span class="accordion__title">Accordion item 2</span>
+          <p class="accordion__title">Accordion item 2</p>
           <img src="../../assets/images/accordion-arrow.svg" alt="show-content" class="accordion__arrow">
         </summary>
         <p class="accordion__content">
@@ -29,7 +35,7 @@
       </details>
       <details class="accordion__item">
         <summary class="accordion__summary">
-          <span class="accordion__title">Accordion item 3</span>
+          <p class="accordion__title">Accordion item 3</p>
           <img src="../../assets/images/accordion-arrow.svg" alt="show-content" class="accordion__arrow">
         </summary>
         <p class="accordion__content">
