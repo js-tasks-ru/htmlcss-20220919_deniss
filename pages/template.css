@@ -1,0 +1,27 @@
+.component-page__header {
+  height: 82px;
+  background: var(--white);
+}
+
+.component-page__main {
+  height: 500px;
+  background: var(--preview-background);
+}
+
+.component-page__footer {
+  background: var(--preview-background);
+  padding-bottom: 56px;
+}
+
+.component-page__footer__body {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--grey-3);
+  text-align: center;
+  margin: 0;
+}
