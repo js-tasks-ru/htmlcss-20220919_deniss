@@ -1,6 +1,7 @@
 .footer {
     text-align: center;
     box-sizing: border-box;
+    padding-top: 72px;
 }
 
 .footer__title{
@@ -10,7 +11,7 @@
     font-size: 38px;
     line-height: 48px;
     color: var(--black);
-    margin: 72px 0 32px 0;
+    margin: 0 0 32px 0;
     box-sizing: border-box;
 }
 
