@@ -45,15 +45,13 @@
 
 .histogram__column-chart {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   height: var(--max-column-height);
   padding-left: 1px;
 }
 
 .histogram__column {
-  min-width: 1px;
-  width: 100%;
+  flex-basis: 9px;
   margin-left: 1px;
   background-color: var(--blue);
 }
