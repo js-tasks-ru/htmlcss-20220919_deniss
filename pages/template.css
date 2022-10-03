@@ -1,19 +1,27 @@
-.component-page__header {
+.page__header {
+  padding: 0;
   height: 82px;
-  background: var(--white);
 }
 
-.component-page__main {
-  height: 500px;
+.page__main {
   background: var(--preview-background);
 }
 
-.component-page__footer {
+.page__inner_container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  box-sizing: border-box;
+  column-gap: 56px;
+  height: 100%;
+  padding-top: 36px;
+}
+
+.page__footer {
   background: var(--preview-background);
   padding-bottom: 56px;
 }
 
-.component-page__footer__body {
+.page__footer__body {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -24,4 +32,8 @@
   color: var(--grey-3);
   text-align: center;
   margin: 0;
+}
+
+.page__content {
+  margin-bottom: 92px;
 }

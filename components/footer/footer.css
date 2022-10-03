@@ -1,6 +1,6 @@
 .footer {
-    height: 200px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .footer__title{
@@ -11,6 +11,7 @@
     line-height: 48px;
     color: var(--black);
     margin: 72px 0 32px 0;
+    box-sizing: border-box;
 }
 
 .footer__body {
@@ -23,4 +24,5 @@
     margin: 0 auto;
     max-width: 650px;
     word-wrap: break-word;
+    box-sizing: border-box;
 }
