@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<!-- Страница с тултипом -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./tooltip.css">
-    </head>
-    <body>
-
-    </body>
+   <head>
+     <link rel="stylesheet" href="../../assets/css/main.css">
+     <link rel="stylesheet" href="../../assets/css/normalize.css">
+     <link rel="stylesheet" href="./tooltip.css">
+     <style>
+        .tooltip-preview {
+            padding-top: 200px;
+            text-align: center;
+        }
+     </style>
+   </head>
+   <body class="tooltip-preview">
+     <div class="tooltip">
+        <div class="tooltip__trigger">
+            <img class="tooltip__icon" src="../../assets/images/tooltip-icon.svg" alt="show tooltip">
+        </div>
+        <div class="tooltip__helper">Helper Text</div>
+     </div>
+   </body>
 </html>
