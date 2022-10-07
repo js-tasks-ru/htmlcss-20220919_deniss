@@ -60,12 +60,12 @@
   color: var(--blue-2);
 }
 
-.item_chosen {
+.calendar__item_chosen {
   background-color: var(--primary);
   color: var(--white);
 }
 
-.item_between {
+.calendar__item_between {
   background: var(--blue-3);
   background-color: rgba(160, 177, 245, 0.2);
 }
