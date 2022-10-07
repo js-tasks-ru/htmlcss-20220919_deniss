@@ -1,15 +1,12 @@
 .modal {
   display: none;
   --blue-1: #334D6E;
-}
-
-.modal__background {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
   min-height: 100%;
-  background-color: rgba(196, 196, 196, 0.5);
+  background-color: rgba(196, 196, 196, 0.5); 
 }
 
 .modal__window {
