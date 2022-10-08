@@ -1,13 +1,46 @@
 .header {
-    padding: 96px 0 77px;
+  padding: 24px 0 0 0;
+  box-sizing: border-box;
+}
+
+.header_inner-header {
+  height: 82px;
+  background: var(--preview-background);
 }
 
 .header__title {
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 64px;
-    color: var(--black);
-    margin: 0;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 64px;
+  color: var(--black);
+  margin: 40px 0;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-square {
+  width: 32px;
+  height: 32px;
+  background: var(--black);
+  margin-right: 8px;
+}
+
+.header__logo-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--black);
+  margin-right: 8px;
+}
+
+.header__logo-triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 32px solid var(--black);
+  border-right: 32px solid transparent;
 }

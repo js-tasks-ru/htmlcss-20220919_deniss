@@ -4,11 +4,6 @@
   grid-template-rows: auto 1fr auto;
 }
 
-.page__header {
-  padding: 0;
-  height: 82px;
-}
-
 .page__main {
   background: var(--preview-background);
 }
@@ -16,8 +11,4 @@
 .page__content {
   background: var(--white);
   margin-bottom: 92px;
-}
-
-.page__footer {
-  background: var(--preview-background);
 }
