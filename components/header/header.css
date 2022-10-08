@@ -18,9 +18,13 @@
   margin: 40px 0;
 }
 
-.header__logo {
+.header__menu {
   display: flex;
   align-items: center;
+}
+
+.header__logo {
+  display: inline-flex;
 }
 
 .header__logo-square {
