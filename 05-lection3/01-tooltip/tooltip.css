@@ -6,7 +6,7 @@
 .tooltip__trigger {
   width: 24px;
   height: 24px;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .tooltip__helper {
@@ -40,6 +40,6 @@
   transform: translateX(-50%);
 }
 
-.tooltip__trigger:hover ~.tooltip__helper {
+.tooltip__trigger:hover + .tooltip__helper {
   display: block;
 }
