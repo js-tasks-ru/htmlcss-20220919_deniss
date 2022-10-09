@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo {
+  display: inline-flex;
+}
+
+.navbar__logo-square {
+  width: 32px;
+  height: 32px;
+  background: var(--black);
+  margin-right: 8px;
+}
+
+.navbar__logo-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--black);
+  margin-right: 8px;
+}
+
+.navbar__logo-triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 32px solid var(--black);
+  border-right: 32px solid transparent;
+}
