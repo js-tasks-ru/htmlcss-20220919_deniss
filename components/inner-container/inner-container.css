@@ -1,10 +1,10 @@
-.inner_container {
+.inner-container {
   display: grid;
   grid-template-columns: auto 1fr;
   box-sizing: border-box;
 }
 
-.page__inner_container {
+.page_inner-container {
   column-gap: 56px;
   padding-top: 36px;
 }  

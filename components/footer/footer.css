@@ -3,13 +3,10 @@
   box-sizing: border-box;
   font-family: 'Inter';
   font-style: normal;
+  padding-top: 72px;
 }
 
-.footer_main-footer {
-  padding-top: 72px; 
-}
-
-.footer_inner-footer {
+.footer_inner {
   padding-bottom: 56px;
   padding-top: 0px;
   background: var(--preview-background);
@@ -24,7 +21,7 @@
   box-sizing: border-box;
 }
 
-.footer__body {
+.footer__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -32,13 +29,10 @@
   margin: 0 auto;
   word-wrap: break-word;
   box-sizing: border-box;
+  max-width: 640px;
 }
 
-.footer_main-body {
-  max-width: 650px;
-}
-
-.footer_inner-body {
+.footer__inner-text {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
@@ -46,5 +40,5 @@
   text-transform: uppercase;
   color: var(--grey-3);
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
 }

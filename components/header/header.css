@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-.header_inner-header {
+.header_inner {
   height: 82px;
   background: var(--preview-background);
 }
