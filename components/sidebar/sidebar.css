@@ -1,0 +1,32 @@
+.sidebar__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--black);
+  margin: 0 0 16px 0;
+}
+
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  width: 229px;
+}
+
+.sidebar__item {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--black);
+  text-decoration: none;
+  box-sizing: border-box;
+  margin-bottom: 4px;
+}
+
+.sidebar__item:last-child {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}

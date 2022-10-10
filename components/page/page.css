@@ -1,0 +1,14 @@
+.page {
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 1fr auto;
+}
+
+.page__main {
+  background: var(--preview-background);
+}
+
+.page__content {
+  background: var(--white);
+  margin-bottom: 92px;
+}

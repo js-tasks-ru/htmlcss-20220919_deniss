@@ -1,10 +1,14 @@
 @import '../fonts/fonts.css';
-@import '../../components/page/page.css';
 @import '../../components/header/header.css';
 @import '../../components/footer/footer.css';
 @import '../../components/preview/preview.css';
 @import '../../components/container/container.css';
+@import '../../components/inner-container/inner-container.css';
 @import '../../components/card/card.css';
+@import '../../components/sidebar/sidebar.css';
+@import '../../components/navbar/navbar.css';
+@import '../../components/content/content.css';
+@import '../../components/page/page.css';
 
 :root {
     --white: #ffffff;
@@ -29,5 +33,9 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  height: 100%;
 }
