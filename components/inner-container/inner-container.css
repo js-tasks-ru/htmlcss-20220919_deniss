@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.page_inner-container {
+.inner-container_inner-page {
   column-gap: 56px;
   padding-top: 36px;
-}  
+}
