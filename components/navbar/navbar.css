@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
+  height: 64px;
 }
 
 .navbar__logo {
@@ -27,4 +28,10 @@
   height: 0;
   border-bottom: 32px solid var(--black);
   border-right: 32px solid transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
 }

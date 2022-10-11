@@ -1,10 +1,9 @@
 .header {
-  padding: 24px 0 0 0;
   box-sizing: border-box;
+  padding-top: 8px;
 }
 
 .header_inner {
-  height: 82px;
   background: var(--preview-background);
 }
 
@@ -16,4 +15,19 @@
   line-height: 64px;
   color: var(--black);
   margin: 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 0;
+  }
+  
+  .header__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    margin: 32px 0;
+  }
 }
