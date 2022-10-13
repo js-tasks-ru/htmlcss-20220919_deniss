@@ -1,6 +1,5 @@
 .inner-container {
-  display: grid;
-  grid-template-columns: 229px 1fr;
+  display: flex;
   box-sizing: border-box;
 }
 
@@ -10,10 +9,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .inner-container {
-    grid-template-columns: 0 1fr;
-  }
-
   .inner-container_inner-page {
     column-gap: 0;
     padding-top: 0;
