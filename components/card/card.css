@@ -43,14 +43,10 @@
   .card {
     width: 164px;
     height: 210px;
-    padding: 8px 0;
+    padding: 0 0 8px 0;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-  }
-
-  .card__component {
-    margin: 8px;
   }
 
   .card__delimiter {
