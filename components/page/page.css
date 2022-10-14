@@ -11,4 +11,13 @@
 .page__content {
   background: var(--white);
   margin-bottom: 92px;
+  padding: 32px 48px 0 48px;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .page__content {
+    margin-bottom: 0;
+    padding: 32px 16px 0 16px;
+  }
 }

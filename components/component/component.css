@@ -1,0 +1,16 @@
+.component__title {
+  margin-bottom: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  color: var(--grey-4);
+}
+
+@media screen and (max-width: 768px) {
+  .component__title {
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+}
