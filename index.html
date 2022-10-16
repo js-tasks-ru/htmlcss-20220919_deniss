@@ -21,86 +21,180 @@
         </div>
       </header>
       <main class="preview">
-        <div class="container">
-          <div class="preview__cards">
-            <div class="card">
-              <div class="card__component"></div>
-              <div class="card__delimiter"></div>
-              <div class="card__title">Tooltip</div>
-              <div class="card__type">Container</div>
+        <div class="tabs">
+          <input class="tabs__input" type="radio" name="tabs" id="all-tab" checked>
+          <input class="tabs__input" type="radio" name="tabs" id="simple-tab">
+          <input class="tabs__input" type="radio" name="tabs" id="complex-tab">
+          <nav class="tabs__nav">
+            <div class="container">
+              <ul class="tabs__menu">
+                <li class="tabs__item">
+                  <label class="tabs__label" for="all-tab">All components</label>
+                </li>
+                <li class="tabs__item">
+                  <label class="tabs__label" for="simple-tab">Simple</label>
+                </li>
+                <li class="tabs__item">
+                  <label class="tabs__label" for="complex-tab">Complex</label>
+                </li>
+              </ul>
             </div>
-            <div class="card">
-              <div class="card__component"></div>
-              <div class="card__delimiter"></div>
-              <h4 class="card__title">Custom form elements</h4>
-              <div class="card__type">Element</div>
-            </div>
-            <div class="card">
-              <div class="card__component"></div>
-              <div class="card__delimiter"></div>
-              <div class="card__title">Calendar</div>
-              <div class="card__type">Container</div>
-            </div>
-            <div class="card">
-              <div class="card__component"></div>
-              <div class="card__delimiter"></div>
-              <div class="card__title">Modal dialog</div>
-              <div class="card__type">Container</div>
-            </div>
-            <div class="card">
-              <div class="card__component">
-                <div class="histogram histogram-preview">
-                  <div class="histogram__header">
-                    <p class="histogram__title">Total orders</p>
-                    <a href="#" class="histogram__link">View all</a>
+          </nav>
+          <div class="tabs__delimiter"></div>
+          <div class="tabs__content tabs__content_all">
+            <div class="container">
+              <div class="preview__cards">
+                <a href="#" class="card">
+                  <div class="card__component"></div>
+                  <div class="card__delimiter"></div>
+                  <div class="card__title">Tooltip</div>
+                  <div class="card__type">Container</div>
+                </a>
+                <a href="#" class="card">
+                  <div class="card__component"></div>
+                  <div class="card__delimiter"></div>
+                  <h4 class="card__title">Custom form elements</h4>
+                  <div class="card__type">Element</div>
+                </a>
+                <a href="#" class="card">
+                  <div class="card__component">
+                    <div class="calendar calendar-preview">
+                      <div class="calendar__title">October 2022</div>
+                      <div class="calendar__wrapper">
+                          <div class="calendar__inner">
+                            <span class="calendar__item calendar__item_day">Mon</span>
+                            <span class="calendar__item calendar__item_day">Tue</span> 
+                            <span class="calendar__item calendar__item_day">Wed</span> 
+                            <span class="calendar__item calendar__item_day">Thu</span> 
+                            <span class="calendar__item calendar__item_day">Fri</span> 
+                            <span class="calendar__item calendar__item_day">Sat</span> 
+                            <span class="calendar__item calendar__item_day">Sun</span>      
+                            <span class="calendar__item"></span>
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item">1</span> 
+                            <span class="calendar__item">2</span>
+                            <span class="calendar__item">3</span>
+                            <span class="calendar__item">4</span> 
+                            <span class="calendar__item">5</span> 
+                            <span class="calendar__item">6</span> 
+                            <span class="calendar__item">7</span> 
+                            <span class="calendar__item">8</span> 
+                            <span class="calendar__item">9</span>
+                            <span class="calendar__item">10</span>
+                            <span class="calendar__item">11</span> 
+                            <span class="calendar__item">12</span> 
+                            <span class="calendar__item">13</span> 
+                            <span class="calendar__item">14</span> 
+                            <span class="calendar__item">15</span> 
+                            <span class="calendar__item">16</span>       
+                            <span class="calendar__item">17</span>
+                            <span class="calendar__item calendar__item_chosen">18</span> 
+                            <span class="calendar__item calendar__item_between">19</span> 
+                            <span class="calendar__item calendar__item_between">20</span> 
+                            <span class="calendar__item calendar__item_between">21</span> 
+                            <span class="calendar__item calendar__item_between">22</span> 
+                            <span class="calendar__item calendar__item_chosen">23</span>       
+                            <span class="calendar__item">24</span>
+                            <span class="calendar__item">25</span> 
+                            <span class="calendar__item">26</span> 
+                            <span class="calendar__item">27</span> 
+                            <span class="calendar__item">28</span> 
+                            <span class="calendar__item">29</span> 
+                            <span class="calendar__item">30</span>       
+                            <span class="calendar__item">31</span>
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span>                       
+                          </div>
+                      </div>
+                    </div>
                   </div>
-                  <h4 class="histogram__total">50254</h4>
-                  <div class="histogram__column-chart">
-                    <div class="histogram__column" style="height: 100%;"></div>
-                    <div class="histogram__column" style="height: 80%;"></div>
-                    <div class="histogram__column" style="height: 14%;"></div>
-                    <div class="histogram__column" style="height: 19%;"></div>
-                    <div class="histogram__column" style="height: 37%;"></div>
-                    <div class="histogram__column" style="height: 89%;"></div>
-                    <div class="histogram__column" style="height: 51%;"></div>
-                    <div class="histogram__column" style="height: 60%;"></div>
-                    <div class="histogram__column" style="height: 71%;"></div>
-                    <div class="histogram__column" style="height: 29%;"></div>
-                    <div class="histogram__column" style="height: 100%;"></div>
-                    <div class="histogram__column" style="height: 52%;"></div>
-                    <div class="histogram__column" style="height: 31%;"></div>
-                    <div class="histogram__column" style="height: 16%;"></div>
-                    <div class="histogram__column" style="height: 37%;"></div>
-                    <div class="histogram__column" style="height: 99%;"></div>
-                    <div class="histogram__column" style="height: 31%;"></div>
-                    <div class="histogram__column" style="height: 62%;"></div>
-                    <div class="histogram__column" style="height: 11%;"></div>
-                    <div class="histogram__column" style="height: 39%;"></div>
-                    <div class="histogram__column" style="height: 100%;"></div>
-                    <div class="histogram__column" style="height: 52%;"></div>
-                    <div class="histogram__column" style="height: 77%;"></div>
-                    <div class="histogram__column" style="height: 20%;"></div>
-                    <div class="histogram__column" style="height: 33%;"></div>
-                    <div class="histogram__column" style="height: 44%;"></div>
-                    <div class="histogram__column" style="height: 22%;"></div>
-                    <div class="histogram__column" style="height: 72%;"></div>
-                    <div class="histogram__column" style="height: 31%;"></div>
-                    <div class="histogram__column" style="height: 89%;"></div>
+                  <div class="card__delimiter"></div>
+                  <div class="card__title">Calendar</div>
+                  <div class="card__type">Container</div>
+                </a>
+                <a href="#" class="card">
+                  <div class="card__component">
+                    <div class="modal modal-preview">
+                      <div class="modal__window">
+                        <div class="modal__header">
+                          <div class="modal__title">Title</div>  
+                          <svg id="modal-close" class="modal__close">
+                            <use href="../../assets/images/icons-sprite.svg#close"></use>
+                          </svg>        
+                        </div>
+                        <div class="modal__text">Description</div>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                  <div class="card__delimiter"></div>
+                  <div class="card__title">Modal dialog</div>
+                  <div class="card__type">Container</div>
+                </a>
+                <a href="#" class="card">
+                  <div class="card__component">
+                    <div class="histogram histogram-preview">
+                      <div class="histogram__header">
+                        <p class="histogram__title">Total orders</p>
+                        <div href="#" class="histogram__link">View all</div>
+                      </div>
+                      <h4 class="histogram__total">50254</h4>
+                      <div class="histogram__column-chart">
+                        <div class="histogram__column" style="height: 100%;"></div>
+                        <div class="histogram__column" style="height: 80%;"></div>
+                        <div class="histogram__column" style="height: 14%;"></div>
+                        <div class="histogram__column" style="height: 19%;"></div>
+                        <div class="histogram__column" style="height: 37%;"></div>
+                        <div class="histogram__column" style="height: 89%;"></div>
+                        <div class="histogram__column" style="height: 51%;"></div>
+                        <div class="histogram__column" style="height: 60%;"></div>
+                        <div class="histogram__column" style="height: 71%;"></div>
+                        <div class="histogram__column" style="height: 29%;"></div>
+                        <div class="histogram__column" style="height: 100%;"></div>
+                        <div class="histogram__column" style="height: 52%;"></div>
+                        <div class="histogram__column" style="height: 31%;"></div>
+                        <div class="histogram__column" style="height: 16%;"></div>
+                        <div class="histogram__column" style="height: 37%;"></div>
+                        <div class="histogram__column" style="height: 99%;"></div>
+                        <div class="histogram__column" style="height: 31%;"></div>
+                        <div class="histogram__column" style="height: 62%;"></div>
+                        <div class="histogram__column" style="height: 11%;"></div>
+                        <div class="histogram__column" style="height: 39%;"></div>
+                        <div class="histogram__column" style="height: 100%;"></div>
+                        <div class="histogram__column" style="height: 52%;"></div>
+                        <div class="histogram__column" style="height: 77%;"></div>
+                        <div class="histogram__column" style="height: 20%;"></div>
+                        <div class="histogram__column" style="height: 33%;"></div>
+                        <div class="histogram__column" style="height: 44%;"></div>
+                        <div class="histogram__column" style="height: 22%;"></div>
+                        <div class="histogram__column" style="height: 72%;"></div>
+                        <div class="histogram__column" style="height: 31%;"></div>
+                        <div class="histogram__column" style="height: 89%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__delimiter"></div>
+                  <div class="card__title">Histogram</div>
+                  <div class="card__type">Container</div>
+                </a>
+                <a href="#" class="card">
+                  <div class="card__component"></div>
+                  <div class="card__delimiter"></div>
+                  <div class="card__title">Avatar</div>
+                  <div class="card__type">Element</div>
+                </a>
               </div>
-              <div class="card__delimiter"></div>
-              <div class="card__title">Histogram</div>
-              <div class="card__type">Container</div>
-            </div>
-            <div class="card">
-              <div class="card__component"></div>
-              <div class="card__delimiter"></div>
-              <div class="card__title">Avatar</div>
-              <div class="card__type">Element</div>
-            </div>
-          </div>
-        </div>
+            </div>  
+          </div><!--TAB_ALL-->
+          <div class="tabs__content tabs__content_simple"></div><!--TAB_SIMPLE-->
+          <div class="tabs__content tabs__content_complex"></div><!--TAB_-->
+        </div> <!--TABS-->
       </main>
       <footer class="footer">
         <div class="container">
