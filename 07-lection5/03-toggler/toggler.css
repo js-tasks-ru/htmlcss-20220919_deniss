@@ -25,7 +25,7 @@
   background: var(--white);
   border: 1px solid var(--grey-2);
   border-radius: 16px;
-  padding: 2px;
+  padding: 1px;
 }
 
 .toggler__circle {
@@ -52,7 +52,7 @@
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__circle {
-  transform: translateX(calc(100% - 2px));
+  transform: translateX(100%);
   background: var(--white);
 }
 
