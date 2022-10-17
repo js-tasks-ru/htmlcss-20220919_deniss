@@ -26,6 +26,7 @@
   border: 1px solid var(--grey-2);
   border-radius: 16px;
   padding: 1px;
+  transition: background 300ms ease-in-out, border 300ms ease-in-out;
 }
 
 .toggler__circle {
@@ -34,7 +35,7 @@
   height: 24px;
   background: var(--grey-2);
   border-radius: 16px;
-  transition: transform 200ms ease-in-out;
+  transition: background 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
 .toggler__title {
