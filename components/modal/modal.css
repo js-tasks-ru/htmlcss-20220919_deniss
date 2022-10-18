@@ -50,7 +50,7 @@
     margin-right: 28px;
   }
 
-  .modal-preview {
+  .modal_preview {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,10 +58,16 @@
     pointer-events: none;
   }
 
-  .modal-preview .modal__window {
+  .modal_preview .modal__window {
     position: static;
     pointer-events: none;
     scale: 0.9;
     padding: 15px;
     transform: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .modal_preview {
+      border-radius: 12px 12px 0 0;
+    }
   }

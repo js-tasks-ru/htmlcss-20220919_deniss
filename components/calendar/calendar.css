@@ -70,7 +70,7 @@
   background-color: rgba(160, 177, 245, 0.2);
 }
 
- .calendar-preview {
+ .calendar_preview {
   background: var(--white);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
@@ -78,23 +78,23 @@
   width: 70%;
 }
 
-.calendar-preview .calendar__title {
+.calendar_preview .calendar__title {
   margin-bottom: 12px;
 }
 
 @media screen and (max-width: 768px) {
-  .calendar-preview {
+  .calendar_preview {
     border: none;
     padding: 0;
   }
 
-  .calendar-preview .calendar__title {
+  .calendar_preview .calendar__title {
     font-size: 12px;
     font-weight: 300;
     margin-bottom: 0;
   }
 
-  .calendar-preview .calendar__item {
+  .calendar_preview .calendar__item {
     font-size: 9px;
     font-weight: 300;
     line-height: normal;
