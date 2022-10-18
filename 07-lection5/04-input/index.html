@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="./input.css">
+    <style>
+        body {
+          display: flex;
+          gap: 50px;
+          margin-left: 50px;
+          margin-top: 50px;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="input-form">
+      <label class="input-form__label" for="default">label</label>
+      <div class="input-form__wrapper">
+        <input class="input-form__text" placeholder="Placeholder" type="text" id="default"> 
+      </div>
+    </div>
+      <div class="input-form input-form_success">
+        <label class="input-form__label" for="success">success</label>
+        <div class="input-form__wrapper">
+          <input class="input-form__text" placeholder="Placeholder" type="text" id="success">
+          <svg class="input-form__icon">
+            <use href="../../assets/images/icons-sprite.svg#success"></use>
+          </svg>
+          <svg class="input-form__icon">
+            <use href="../../assets/images/icons-sprite.svg#alert"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="input-form input-form_error">
+        <label class="input-form__label" for="error">error</label>
+        <div class="input-form__wrapper">
+          <input class="input-form__text" placeholder="Placeholder" type="text" id="error">
+          <svg class="input-form__icon">
+            <use href="../../assets/images/icons-sprite.svg#success"></use>
+          </svg>
+          <svg class="input-form__icon">
+            <use href="../../assets/images/icons-sprite.svg#alert"></use>
+          </svg>
+        </div>
+      </div>
+  </body>
 </html>
