@@ -16,6 +16,8 @@
 @import '../../components/tooltip/tooltip.css';
 @import '../../components/component/component.css';
 @import '../../components/tabs/tabs.css';
+@import '../../components/checkbox/checkbox.css';
+@import '../../components/radio/radio.css';
 
 :root {
     --white: #ffffff;
