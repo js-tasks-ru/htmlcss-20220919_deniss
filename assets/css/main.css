@@ -11,7 +11,12 @@
 @import '../../components/page/page.css';
 @import '../../components/histogram/histogram.css';
 @import '../../components/toggler/toggler.css';
+@import '../../components/calendar/calendar.css';
+@import '../../components/modal/modal.css';
+@import '../../components/avatar/avatar.css';
+@import '../../components/tooltip/tooltip.css';
 @import '../../components/component/component.css';
+@import '../../components/tabs/tabs.css';
 
 :root {
     --white: #ffffff;
