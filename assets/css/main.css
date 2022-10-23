@@ -10,6 +10,7 @@
 @import '../../components/content/content.css';
 @import '../../components/page/page.css';
 @import '../../components/histogram/histogram.css';
+@import '../../components/toggler/toggler.css';
 @import '../../components/calendar/calendar.css';
 @import '../../components/modal/modal.css';
 @import '../../components/avatar/avatar.css';
@@ -25,6 +26,7 @@
     --pink: #F784AD;
     --purple: #7048E8;
     --dark-purple: #5028C6;
+    --orange: #D84910;
     --blue: #4263EB;
     --preview-background: #F9FAFC;
     --dark-blue: #2342C0;
