@@ -47,6 +47,27 @@
   color: var(--grey-4);
 }
 
+.toggler__theme-icon {
+  fill: none;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+
+.toggler__theme-icon_light-theme {
+  left: -38px;
+  color: var(--grey-4);
+  top: 50%;
+  transform: translateY(-50%);  
+}
+
+.toggler__theme-icon_dark-theme {
+  right: -38px;
+  top: 50%;
+  transform: translateY(-50%);  
+  color: var(--grey-3);
+}
+
 .toggler__input:checked ~ .toggler__state .toggler__control {
   background: var(--blue);
   border-color: var(--blue);
