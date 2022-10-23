@@ -1,12 +1,98 @@
 <!DOCTYPE html>
-<!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../components/navbar/navbar.css">
+    <link rel="stylesheet" href="../../components/header/header.css">
+    <link rel="stylesheet" href="./burger-menu.css">
+    <style>
+      .button-burger-menu-trigger {
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        width: 32px;
+        height: 32px;
+        border: 1px solid var(--grey-2);
+        background: var(--preview-background);
+      }
+      .icon-burger-menu-trigger {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <script defer src="./burger-menu.js"></script>
+  </head>
+  <body>
+    <button class="button-burger-menu-trigger" id="burger-menu-open">
+      <svg class="icon-burger-menu-trigger">
+        <use href="../../assets/images/icons-sprite.svg#burger-menu">
+        </use>
+      </svg>
+    </button>
+    <div class="burger-menu" id="burger-menu">
+      <div class="header">
+        <div class="container">
+          <div class="navbar navbar_burger-menu">
+            <button id="burger-menu-close" class="burger-menu__button-close">
+              <svg class="burger-menu__icon-close">
+                <use href="../../assets/images/icons-sprite.svg#close">
+                </use>
+              </svg>
+            </button>
+            <div class="navbar__logo">
+              <div class="navbar__logo-square"></div>
+              <div class="navbar__logo-circle"></div>
+              <div class="navbar__logo-triangle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="burger-menu__delimiter"></div>
+        <div class="burger-menu__theme">
+          <p class="burger-menu__theme-text">Dark mode</p>
+          <label class="toggler">
+            <input type="checkbox" class="toggler__input">
+            <div class="toggler__state">
+              <div class="toggler__control">
+                <div class="toggler__circle"></div>
+              </div>
+              <div class="toggler__title"></div>
+            </div>
+          </label>            
+        </div>
+        <div class="burger-menu__delimiter"></div>
+        <h4 class="burger-menu__title">Components</h4>
+        <ul class="burger-menu__list">
+          <li class="burger-menu__item">
+            <a href="#" class="burger-menu__link">Modal</a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="#" class="burger-menu__link">Tooltip</a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="#" class="burger-menu__link">Avatar</a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="#" class="burger-menu__link">Calendar</a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="#" class="burger-menu__link">Histogram</a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="#" class="burger-menu__link">Custom form elements</a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="#" class="burger-menu__link">Main page</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
