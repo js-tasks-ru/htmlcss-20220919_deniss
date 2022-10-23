@@ -78,15 +78,15 @@
   color: var(--black);
 }
 
-.tabs-component {
+.tabs_component {
   margin-top: 64px;
 }
 
-.tabs-component .tabs__menu {
+.tabs_component .tabs__menu {
   margin-left: 48px;
 }
 
-.tabs-component .tabs__content {
+.tabs_component .tabs__content {
   background: var(--white);
   padding: 50px 48px 64px 48px;
 }
@@ -133,15 +133,15 @@
 }
 
 @media screen and (max-width: 768px) {
-  .tabs-component {
+  .tabs_component {
     margin-top: 24px;
   }
   
-  .tabs-component .tabs__menu {
+  .tabs_component .tabs__menu {
     margin-left: 0px;
   }
 
-  .tabs-component .tabs__content {
+  .tabs_component .tabs__content {
     padding: 25px 24px 32px 16px;
   }
   
