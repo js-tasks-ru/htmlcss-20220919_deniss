@@ -9,6 +9,7 @@
 @import '../../components/navbar/navbar.css';
 @import '../../components/content/content.css';
 @import '../../components/page/page.css';
+@import '../../components/burger-menu/burger-menu.css';
 @import '../../components/histogram/histogram.css';
 @import '../../components/toggler/toggler.css';
 @import '../../components/calendar/calendar.css';
