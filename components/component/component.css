@@ -1,5 +1,6 @@
 .component {
   padding: 0 48px;
+  margin-bottom: 64px;
 }
 
 .component__title {
@@ -15,6 +16,7 @@
 @media screen and (max-width: 768px) {
   .component {
     padding: 0 16px;
+    margin-bottom: 24px;
   }
 
   .component__title {

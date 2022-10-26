@@ -30,12 +30,12 @@
   margin-bottom: 0px;
 }
 
-.sidebar_innner-page {
+.sidebar_component-page {
   width: 229px;
 }
 
 @media screen and (max-width: 768px) {
-  .sidebar_innner-page {
+  .sidebar_component-page {
     display: none;
   }
 }

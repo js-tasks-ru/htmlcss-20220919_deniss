@@ -81,7 +81,7 @@
   margin-right: 92px;
 }
 
-.navbar__theme-changer {
+.navbar .toggler {
   margin-top: 8px;
   margin-right: 38px;
 }
@@ -106,7 +106,7 @@
   }
 
   .navbar__links,
-  .navbar .navbar__theme-changer {
+  .navbar .toggler {
     display: none;
   }
 }
