@@ -1,3 +1,7 @@
+.component {
+  padding: 0 48px;
+}
+
 .component__title {
   margin-bottom: 24px;
   font-family: 'Inter';
@@ -9,6 +13,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .component {
+    padding: 0 16px;
+  }
+
   .component__title {
     line-height: 26px;
     margin-bottom: 20px;

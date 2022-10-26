@@ -48,10 +48,22 @@
   align-items: flex-end;
   height: var(--max-column-height);
   padding-left: 1px;
+  animation: column-grow 350ms ease-out;
 }
 
 .histogram__column {
   flex-basis: 9px;
   margin-left: 1px;
   background-color: var(--blue);
+}
+
+@keyframes column-grow {
+  0% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
 }

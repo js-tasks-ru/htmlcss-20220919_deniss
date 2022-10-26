@@ -1,4 +1,4 @@
-.tabs__menu{
+.tabs__menu {
   padding: 0;
   margin: 0;
   display: flex;
@@ -6,7 +6,7 @@
   margin-bottom: 5px;
 }
 
-.tabs__input{
+.tabs__input {
   position: absolute;
   outline: none;
   clip: rect(0, 0, 0, 0);
@@ -43,7 +43,7 @@
   transition: transform 250ms ease-in-out;
 }
 
-.tabs__item:not(:last-child){
+.tabs__item:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -57,14 +57,42 @@
   background: var(--preview-background);
 }
 
+.tabs__code-wrapper {
+  margin:0;
+}
+
+.tabs__code-wrapper .tabs__code {
+  background: var(--white);
+  padding: 0;
+}
+
 .tabs__content_all,
 .tabs__content_simple,
-.tabs__content_complex {
+.tabs__content_complex,
+.tabs__content_html,
+.tabs__content_css {
   display: none;
 }
 
 .tabs__label:hover {
   color: var(--black);
+}
+
+.tabs_component {
+  margin-top: 64px;
+}
+
+.tabs_component .tabs__menu {
+  margin-left: 48px;
+}
+
+.tabs_component .tabs__content {
+  background: var(--white);
+  padding: 50px 48px 64px 48px;
+}
+
+.tabs__inner-content {
+  background: var(--white);
 }
 
 .tabs__input[id='all-tab']:checked  ~ .tabs__nav .tabs__label[for='all-tab'],
@@ -85,4 +113,41 @@
 .tabs__input[id='complex-tab']:checked ~ .tabs__content_simple,
 .tabs__input[id='simple-tab']:checked ~ .tabs__content_complex {
   display: block;
+}
+
+.tabs__input[id='html-tab']:checked  ~ .tabs__nav .tabs__label[for='html-tab'],
+.tabs__input[id='css-tab']:checked ~ .tabs__nav .tabs__label[for='css-tab'] {
+  color: var(--black);
+}
+
+.tabs__label:hover::after,
+.tabs__input[id='html-tab']:checked  ~ .tabs__nav .tabs__label[for='html-tab']::after,
+.tabs__input[id='css-tab']:checked ~ .tabs__nav .tabs__label[for='css-tab']::after {
+  transform: scaleX(1); 
+  color: var(--black);
+}
+
+.tabs__input[id='html-tab']:checked ~ .tabs__content_html,
+.tabs__input[id='css-tab']:checked ~ .tabs__content_css {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .tabs_component {
+    margin-top: 24px;
+  }
+  
+  .tabs_component .tabs__menu {
+    margin-left: 0px;
+  }
+
+  .tabs_component .tabs__content {
+    padding: 25px 24px 32px 16px;
+  }
+  
+  .tabs__code {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+  }
 }

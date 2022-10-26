@@ -9,6 +9,7 @@
 @import '../../components/navbar/navbar.css';
 @import '../../components/content/content.css';
 @import '../../components/page/page.css';
+@import '../../components/burger-menu/burger-menu.css';
 @import '../../components/histogram/histogram.css';
 @import '../../components/toggler/toggler.css';
 @import '../../components/calendar/calendar.css';
@@ -17,6 +18,8 @@
 @import '../../components/tooltip/tooltip.css';
 @import '../../components/component/component.css';
 @import '../../components/tabs/tabs.css';
+@import '../../components/checkbox/checkbox.css';
+@import '../../components/radio/radio.css';
 
 :root {
     --white: #ffffff;
@@ -46,5 +49,5 @@ body {
 }
 
 html, body {
-  height: 100%;
+  min-height: 100%;
 }

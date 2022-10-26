@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/atom-one-light.min.css">
     <link rel="stylesheet" href=".././assets/css/normalize.css">
     <link rel="stylesheet" href=".././assets/css/main.css">
     <title>Component page</title>
@@ -11,10 +12,94 @@
       <header class="header header_inner">
         <div class="container">
           <div class="navbar">
+            <button class="navbar__mobile-menu-trigger" id="burger-menu-open">
+              <svg class="icon-burger-menu-trigger">
+                <use href="../../assets/images/icons-sprite.svg#burger-menu">
+                </use>
+              </svg>
+            </button>
             <div class="navbar__logo">
               <div class="navbar__logo-square"></div>
               <div class="navbar__logo-circle"></div>
               <div class="navbar__logo-triangle"></div>
+            </div>
+            <nav class="navbar__links">
+              <a href="#" class="navbar__link navbar__link-active">Components</a>
+              <a href="#" class="navbar__link">About</a>
+              <a href="#" class="navbar__link">Contact</a>
+            </nav>
+            <label class="toggler navbar__theme-changer">
+              <input type="checkbox" class="toggler__input" id="theme-changer">
+              <div class="toggler__state">
+                <div class="toggler__control">
+                  <div class="toggler__circle"></div>
+                </div>
+                <svg class="toggler__theme-icon toggler__theme-icon_light-theme">
+                  <use href="../../assets/images/icons-sprite.svg#sun"></use>
+                </svg>
+                <svg class="toggler__theme-icon toggler__theme-icon_dark-theme">
+                  <use href="../../assets/images/icons-sprite.svg#moon"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="burger-menu" id="burger-menu">
+            <div class="header">
+              <div class="container">
+                <div class="navbar navbar_burger-menu">
+                  <button id="burger-menu-close" class="burger-menu__button-close">
+                    <svg class="burger-menu__icon-close">
+                      <use href="../../assets/images/icons-sprite.svg#close">
+                      </use>
+                    </svg>
+                  </button>
+                  <div class="navbar__logo">
+                    <div class="navbar__logo-square"></div>
+                    <div class="navbar__logo-circle"></div>
+                    <div class="navbar__logo-triangle"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="burger-menu__delimiter"></div>
+              <div class="burger-menu__theme">
+                <p class="burger-menu__theme-text">Dark mode</p>
+                <label class="toggler">
+                  <input type="checkbox" class="toggler__input">
+                  <div class="toggler__state">
+                    <div class="toggler__control">
+                      <div class="toggler__circle"></div>
+                    </div>
+                    <div class="toggler__title"></div>
+                  </div>
+                </label>            
+              </div>
+              <div class="burger-menu__delimiter"></div>
+              <h4 class="burger-menu__title">Components</h4>
+              <ul class="burger-menu__list">
+                <li class="burger-menu__item">
+                  <a href="#" class="burger-menu__link">Modal</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#" class="burger-menu__link">Tooltip</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#" class="burger-menu__link">Avatar</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#" class="burger-menu__link">Calendar</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#" class="burger-menu__link">Histogram</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#" class="burger-menu__link">Custom form elements</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#" class="burger-menu__link">Main page</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -77,6 +162,136 @@
                   </div>
                 </div>
               </div>
+              <div class="tabs tabs_component">
+                <input class="tabs__input" type="radio" name="component-tabs" id="html-tab" checked>
+                <input class="tabs__input" type="radio" name="component-tabs" id="css-tab">
+                <nav class="tabs__nav">
+                  <div class="container">
+                    <ul class="tabs__menu">
+                      <li class="tabs__item">
+                        <label class="tabs__label" for="html-tab">HTML</label>
+                      </li>
+                      <li class="tabs__item">
+                        <label class="tabs__label" for="css-tab">CSS</label>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+                <div class="tabs__delimiter"></div>
+                <div class="tabs__content tabs__content_html">
+                  <pre class="tabs__code-wrapper"><code class="tabs__code">&lt;div class=&quot;histogram&quot;&gt;
+  &lt;div class=&quot;histogram__header&quot;&gt;
+    &lt;p class=&quot;histogram__title&quot;&gt;Total orders&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;histogram__link&quot;&gt;View all&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;h4 class=&quot;histogram__total&quot;&gt;50254&lt;/h4&gt;
+  &lt;div class=&quot;histogram__column-chart&quot;&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 100%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 80%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 14%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 19%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 37%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 89%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 51%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 60%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 71%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 29%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 100%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 52%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 31%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 16%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 37%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 99%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 31%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 62%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 11%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 39%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 100%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 52%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 77%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 20%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 33%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 44%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 22%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 72%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 31%;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 89%;&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+                <div class="tabs__content tabs__content_css"><pre class="tabs__code-wrapper"><code class="tabs__code">.histogram {
+  width: 100%;
+  background: var(--white);
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 16px 24px 24px 24px;
+  --max-column-height: 50px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.histogram__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.histogram__title {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  opacity: 0.8;
+  margin: 0;
+}
+
+.histogram__link {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--blue);
+  margin-top: 3px;
+}
+
+.histogram__total {
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--black);
+  margin: 6px 0 39px 0;
+}
+
+.histogram__column-chart {
+  display: flex;
+  align-items: flex-end;
+  height: var(--max-column-height);
+  padding-left: 1px;
+}
+
+.histogram__column {
+  flex-grow: 1;
+  flex-basis: 9px;
+  margin-left: 1px;
+  background-color: var(--blue);
+}
+
+@media screen and (max-width: 768px) {
+  .histogram_preview {
+    padding: 6px 8px 8px;
+    width: 90%;
+    --max-column-height: 35px;
+  }
+
+  .histogram_preview .histogram__total {
+    margin: 0;
+    font-size: 10px;
+  }
+
+  .histogram_preview .histogram__title,
+  .histogram_preview .histogram__link {
+    font-size: 10px;
+    line-height: normal;
+  }
+}</code></pre></div>
+              </div>
             </main>
           </div>
         </div>
@@ -88,4 +303,8 @@
       </footer>
     </div>
   </body>
+<script src="../assets/scripts/burger-menu.js"></script>
+<script src="../assets/scripts/theme-changer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </html>

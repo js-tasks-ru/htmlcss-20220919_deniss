@@ -43,6 +43,7 @@
   align-items: flex-end;
   height: var(--max-column-height);
   padding-left: 1px;
+  animation: column-grow 500ms ease-out;
 }
 
 .histogram__column {
@@ -68,5 +69,16 @@
   .histogram_preview .histogram__link {
     font-size: 10px;
     line-height: normal;
+  }
+}
+
+@keyframes column-grow {
+  0% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: bottom;
   }
 }
