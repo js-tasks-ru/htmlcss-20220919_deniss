@@ -78,10 +78,6 @@
   color: var(--black);
 }
 
-.tabs__nav_component-page {
-  padding-left: 48px;
-}
-
 .tabs__content_html,
 .tabs__content_css {
   padding: 50px 48px 64px 48px;
@@ -115,10 +111,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .tabs__nav_component-page {
-    padding-left: 0px;
-  }
-
   .tabs__content {
     padding: 2rem 0;
   }

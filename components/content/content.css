@@ -4,3 +4,13 @@
   border-radius: 12px;
   box-sizing: border-box;
 }
+
+.content__nav {
+  padding-left: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .content__nav {
+    padding-left: 0px;
+  }
+}
