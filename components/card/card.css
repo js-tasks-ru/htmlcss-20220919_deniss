@@ -7,8 +7,8 @@
   height: 367px;
   font-family: 'Roboto';
   font-style: normal;
-  background: var(--white);
-  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  background: var(--main-bg);
+  box-shadow: 0px 2px 4px var(--card-shadow);
   border-radius: 12px;
   padding: 32px 25px;
   text-decoration: none;
@@ -25,7 +25,7 @@
 .card__delimiter {
   display: none;
   height: 1px;
-  background: var(--grey-2);
+  background: var(--text-tertiary);
 }
 
 .card__title {
@@ -33,7 +33,7 @@
   font-size: 21px;
   line-height: 25px;
   text-align: center;
-  color: var(--black);
+  color: var(--text-primary);
   margin-bottom: 6px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -45,7 +45,7 @@
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: var(--grey-3);
+  color: var(--text-secondary);
 }
 
 .card__component_grid {

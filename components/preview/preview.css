@@ -1,5 +1,6 @@
 .preview {
   flex-grow: 1;
+  background: var(--main-bg);
 }
 
 .preview__cards {

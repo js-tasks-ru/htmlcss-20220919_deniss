@@ -14,7 +14,7 @@
 
 .tabs__item {
   position: relative;
-  color: var(--grey-3);
+  color: var(--text-secondary);
   display: inline-flex;
   white-space: nowrap;
 }
@@ -25,7 +25,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-3);
+  color: var(--text-secondary);
   margin-bottom: 8px; 
   cursor: pointer;  
 }
@@ -35,7 +35,7 @@
   content: '';
   height: 5px;
   width: 100%;
-  background-color: var(--black);
+  background-color: var(--text-primary);
   top: 100%;
   transform-origin: left;
   display: block;
@@ -49,7 +49,7 @@
 
 .tabs__delimiter {
   height: 1px;
-  background: var(--grey-2);
+  background: var(--text-tertiary);
 }
 
 .tabs__content {
@@ -75,7 +75,7 @@
 }
 
 .tabs__label:hover {
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .tabs__content_html,
@@ -89,7 +89,7 @@
 .tabs__input[id='complex-tab']:checked ~ .tabs__nav .tabs__label[for='complex-tab'],
 .tabs__input[id='html-tab']:checked  ~ .tabs__nav .tabs__label[for='html-tab'],
 .tabs__input[id='css-tab']:checked ~ .tabs__nav .tabs__label[for='css-tab'] {
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .tabs__label:hover::after,

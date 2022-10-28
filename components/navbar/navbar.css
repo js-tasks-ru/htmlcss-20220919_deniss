@@ -37,7 +37,7 @@
 .navbar__logo-square {
   width: 32px;
   height: 32px;
-  background: var(--black);
+  background: var(--text-primary);
   margin-right: 8px;
 }
 
@@ -45,14 +45,14 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--black);
+  background: var(--text-primary);
   margin-right: 8px;
 }
 
 .navbar__logo-triangle {
   width: 0;
   height: 0;
-  border-bottom: 32px solid var(--black);
+  border-bottom: 32px solid var(--text-primary);
   border-right: 32px solid transparent;
 }
 
@@ -66,11 +66,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-3);
+  color: var(--text-secondary);
 }
 
 .navbar__link.navbar__link-active {
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .navbar__link:not(:last-child) {

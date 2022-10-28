@@ -7,13 +7,13 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .tooltip__helper {
   display: none;
   position: absolute;
-  background: var(--blue);
+  background: var(--primary);
   box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   border-radius: 10px;
   padding: 13px 21px;
@@ -24,7 +24,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: var(--grey-2);
+  color: var(--white);
   bottom: calc(100% + 9px);
   left: 50%;
   transform: translateX(-50%);
@@ -35,7 +35,7 @@
   position: absolute;
   content: "";
   border: 7px solid transparent;
-  border-top: 6px solid var(--blue);
+  border-top: 6px solid var(--primary);
   top: 100%;
   left: 50%;
   transform: translateX(-50%);

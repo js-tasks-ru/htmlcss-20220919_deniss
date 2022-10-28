@@ -1,5 +1,6 @@
 .header {
   box-sizing: border-box;
+  background: var(--main-bg);
 }
 
 .header_inner {
@@ -12,7 +13,7 @@
   font-weight: 500;
   font-size: 50px;
   line-height: 64px;
-  color: var(--black);
+  color: var(--text-primary);
   margin: 40px 0;
 }
 
