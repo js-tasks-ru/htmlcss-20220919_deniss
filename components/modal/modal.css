@@ -1,6 +1,5 @@
 .modal {
     display: none;
-    --blue-1: #334D6E;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -12,7 +11,7 @@
   .modal__window {
     position: fixed;    
     box-sizing: border-box;
-    background: var(--white); 
+    background: var(--main-bg); 
     border-radius: 8px;
     padding: 12px 12px 33px 40px;
     left: 50%;
@@ -31,14 +30,14 @@
   .modal__close {
     width: 24px;
     height: 24px;
-    color: var(--grey-4);
+    color: var(--text-quaternary);
   }
   
   .modal__title {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: var(--blue-1);
+    color: var(--calendar-primary);
     margin-top: 18px;
   }
   
@@ -46,7 +45,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: var(--grey-4);
+    color: var(--text-quaternary);
     margin-right: 28px;
   }
 

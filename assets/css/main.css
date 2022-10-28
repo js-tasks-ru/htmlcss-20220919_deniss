@@ -22,26 +22,61 @@
 @import '../../components/radio/radio.css';
 
 :root {
-    --white: #ffffff;
-    --black: #212429;
-    --pink: #F784AD;
-    --purple: #7048E8;
-    --dark-purple: #5028C6;
-    --orange: #D84910;
-    --blue: #4263EB;
-    --preview-background: #F9FAFC;
-    --dark-blue: #2342C0;
-    --red: #F03D3E;
-    --grey-1: #F8F9FA;
-    --grey-2: #DDE2E5;
-    --grey-3: #ACB5BD;
-    --grey-4: #495057;
+  --white: #ffffff;
+  --black: #212429;
+  --pink: #F784AD;
+  --purple: #7048E8;
+  --dark-purple: #5028C6;
+  --orange: #D84910;
+  --blue: #4263EB;
+  --blue-1: #334D6E;
+  --blue-1-inverted: #ccb291;
+  --blue-2: #90A0B7;
+  --blue-2-inverted: #6f5f48;
+  --blue-3: #A0B1F5;
+  --blue-3-inverted: #5f4e0a;
+  --dark-blue: #2342C0;
+  --red: #F03D3E;
+  --card-shadow-color: #f4f4f4;
+  --card-shadow-color-inverted: #0b0b0b;
+  --grey-1: #F8F9FA;
+  --grey-2: #DDE2E5;
+  --grey-2-inverted: #221d1a;
+  --grey-3: #ACB5BD;
+  --grey-3-inverted: #534a42;
+  --grey-4: #495057;
+  --grey-4-inverted: #b6afa8;
+  
+  --error: var(--red);
+  --success: var(--blue);
+  --preview-background-color: #F9FAFC;
+  --preview-background-color-inverted: #060503;
+  --main-bg: var(--white);
+  --preview-background: var(--preview-background-color);
+  --text-primary: var(--black);
+  --text-secondary: var(--grey-3);
+  --text-tertiary: var(--grey-2);
+  --text-quaternary: var(--grey-4);
+  --card-shadow: var(--card-shadow-color);
+  --calendar-primary: var(--blue-1);
+  --calendar-secondary: var(--blue-2);
+  --calendar-tertiary: var(--blue-3);  
+  
+  --primary: var(--blue);
+  --secondary: var(--purple);
+}
 
-    --error: var(--red);
-    --success: var(--blue);
-
-    --primary: var(--blue);
-    --secondary: var(--purple);
+html[data-theme-dark] {
+  --main-bg: var(--black);
+  --preview-background: var(--preview-background-color-inverted);
+  --text-primary: var(--white);
+  --text-secondary: var(--grey-3-inverted);
+  --text-tertiary: var(--grey-2-inverted);
+  --text-quaternary: var(--grey-4-inverted);
+  --card-shadow: var(--card-shadow-color-inverted);
+  --calendar-primary: var(--blue-1-inverted);
+  --calendar-secondary: var(--blue-2-inverted);
+  --calendar-tertiary: var(--blue-3-inverted);  
 }
 
 body {
@@ -50,4 +85,12 @@ body {
 
 html, body {
   min-height: 100%;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }

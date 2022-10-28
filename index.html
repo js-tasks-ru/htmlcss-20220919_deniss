@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>Main page</title>
   </head>
-  <body>
+  <body class="preload">
     <div class="page">
       <header class="header">
         <div class="container">
@@ -66,7 +66,7 @@
               <div class="burger-menu__theme">
                 <p class="burger-menu__theme-text">Dark mode</p>
                 <label class="toggler">
-                  <input type="checkbox" class="toggler__input">
+                  <input type="checkbox" class="toggler__input" id="burger-theme-changer">
                   <div class="toggler__state">
                     <div class="toggler__control">
                       <div class="toggler__circle"></div>
@@ -362,6 +362,7 @@
       </footer>
     </div>
   </body>
+<script src="./assets/scripts/no-transition-page-load.js"></script>
 <script defer src="./assets/scripts/burger-menu.js"></script>
 <script defer src="./assets/scripts/theme-changer.js"></script>
 </html>

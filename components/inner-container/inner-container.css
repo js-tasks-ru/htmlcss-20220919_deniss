@@ -3,13 +3,13 @@
   box-sizing: border-box;
 }
 
-.inner-container_inner-page {
+.inner-container_component-page {
   column-gap: 56px;
   padding-top: 36px;
 }
 
 @media screen and (max-width: 768px) {
-  .inner-container_inner-page {
+  .inner-container_component-page {
     column-gap: 0;
     padding-top: 0;
   }

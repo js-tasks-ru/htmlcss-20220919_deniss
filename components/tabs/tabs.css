@@ -14,7 +14,7 @@
 
 .tabs__item {
   position: relative;
-  color: var(--grey-3);
+  color: var(--text-secondary);
   display: inline-flex;
   white-space: nowrap;
 }
@@ -25,7 +25,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-3);
+  color: var(--text-secondary);
   margin-bottom: 8px; 
   cursor: pointer;  
 }
@@ -35,7 +35,7 @@
   content: '';
   height: 5px;
   width: 100%;
-  background-color: var(--black);
+  background-color: var(--text-primary);
   top: 100%;
   transform-origin: left;
   display: block;
@@ -49,7 +49,7 @@
 
 .tabs__delimiter {
   height: 1px;
-  background: var(--grey-2);
+  background: var(--text-tertiary);
 }
 
 .tabs__content {
@@ -58,7 +58,7 @@
 }
 
 .tabs__code-wrapper {
-  margin:0;
+  margin: 0;
 }
 
 .tabs__code-wrapper .tabs__code {
@@ -75,74 +75,54 @@
 }
 
 .tabs__label:hover {
-  color: var(--black);
+  color: var(--text-primary);
 }
 
-.tabs_component {
-  margin-top: 64px;
-}
-
-.tabs_component .tabs__menu {
-  margin-left: 48px;
-}
-
-.tabs_component .tabs__content {
-  background: var(--white);
+.tabs__content_html,
+.tabs__content_css {
   padding: 50px 48px 64px 48px;
-}
-
-.tabs__inner-content {
   background: var(--white);
 }
 
 .tabs__input[id='all-tab']:checked  ~ .tabs__nav .tabs__label[for='all-tab'],
 .tabs__input[id='simple-tab']:checked ~ .tabs__nav .tabs__label[for='simple-tab'],
-.tabs__input[id='complex-tab']:checked ~ .tabs__nav .tabs__label[for='complex-tab'] {
-  color: var(--black);
+.tabs__input[id='complex-tab']:checked ~ .tabs__nav .tabs__label[for='complex-tab'],
+.tabs__input[id='html-tab']:checked  ~ .tabs__nav .tabs__label[for='html-tab'],
+.tabs__input[id='css-tab']:checked ~ .tabs__nav .tabs__label[for='css-tab'] {
+  color: var(--text-primary);
 }
 
 .tabs__label:hover::after,
 .tabs__input[id='all-tab']:checked  ~ .tabs__nav .tabs__label[for='all-tab']::after,
 .tabs__input[id='simple-tab']:checked ~ .tabs__nav .tabs__label[for='simple-tab']::after,
-.tabs__input[id='complex-tab']:checked ~ .tabs__nav .tabs__label[for='complex-tab']::after {
-  transform: scaleX(1); 
-  color: var(--black);
-}
-
-.tabs__input[id='all-tab']:checked ~ .tabs__content_all,
-.tabs__input[id='complex-tab']:checked ~ .tabs__content_simple,
-.tabs__input[id='simple-tab']:checked ~ .tabs__content_complex {
-  display: block;
-}
-
-.tabs__input[id='html-tab']:checked  ~ .tabs__nav .tabs__label[for='html-tab'],
-.tabs__input[id='css-tab']:checked ~ .tabs__nav .tabs__label[for='css-tab'] {
-  color: var(--black);
-}
-
-.tabs__label:hover::after,
+.tabs__input[id='complex-tab']:checked ~ .tabs__nav .tabs__label[for='complex-tab']::after,
 .tabs__input[id='html-tab']:checked  ~ .tabs__nav .tabs__label[for='html-tab']::after,
 .tabs__input[id='css-tab']:checked ~ .tabs__nav .tabs__label[for='css-tab']::after {
   transform: scaleX(1); 
   color: var(--black);
 }
 
+.tabs__input[id='all-tab']:checked ~ .tabs__content_all,
+.tabs__input[id='complex-tab']:checked ~ .tabs__content_simple,
+.tabs__input[id='simple-tab']:checked ~ .tabs__content_complex,
 .tabs__input[id='html-tab']:checked ~ .tabs__content_html,
 .tabs__input[id='css-tab']:checked ~ .tabs__content_css {
   display: block;
 }
 
 @media screen and (max-width: 768px) {
-  .tabs_component {
-    margin-top: 24px;
-  }
-  
-  .tabs_component .tabs__menu {
-    margin-left: 0px;
+  .tabs__content {
+    padding: 2rem 0;
   }
 
-  .tabs_component .tabs__content {
+  .tabs__content_html,
+  .tabs__content_css {
     padding: 25px 24px 32px 16px;
+    background: var(--white);
+  }
+
+  .tabs__item:not(:last-child) {
+    margin-right: 24px;
   }
   
   .tabs__code {

@@ -1,5 +1,6 @@
 .preview {
   flex-grow: 1;
+  background: var(--main-bg);
 }
 
 .preview__cards {
@@ -15,6 +16,6 @@
   }
 
   .preview__cards {
-    gap: 23px 16px;
+    gap: 16px;
   }
 }
