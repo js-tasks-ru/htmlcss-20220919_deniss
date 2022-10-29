@@ -1,12 +1,17 @@
-const changer = document.getElementById('theme-changer');
-const burger_changer = document.getElementById('burger-theme-changer');
 const html = document.documentElement;
+const themeChangers = document.querySelectorAll('.theme_changer');
+const themes = document.querySelectorAll('[data-type="theme"]');
 
-changer.addEventListener('change', function() {
-    html.toggleAttribute('data-theme-dark');
+function themeSwitch(otherSwitcherNum) {
+  themeChangers[otherSwitcherNum].checked = !themeChangers[otherSwitcherNum].checked;
+  themes.forEach(theme => theme.toggleAttribute('disabled'));
+  html.toggleAttribute('data-theme-dark');
+}
+
+themeChangers[0].addEventListener('change', function() {
+  themeSwitch(1);
 });
 
-burger_changer.addEventListener('change', function() {
-    html.toggleAttribute('data-theme-dark');
+themeChangers[1].addEventListener('change', function() {
+  themeSwitch(0);
 });
-

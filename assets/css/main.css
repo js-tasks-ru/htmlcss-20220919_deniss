@@ -46,11 +46,11 @@
   --grey-3-inverted: #534a42;
   --grey-4: #495057;
   --grey-4-inverted: #b6afa8;
-  
+  --preview-background-color: #F9FAFC;
+  --preview-background-color-inverted: #060503; 
+
   --error: var(--red);
   --success: var(--blue);
-  --preview-background-color: #F9FAFC;
-  --preview-background-color-inverted: #060503;
   --main-bg: var(--white);
   --preview-background: var(--preview-background-color);
   --text-primary: var(--black);
