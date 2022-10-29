@@ -74,6 +74,11 @@
   display: none;
 }
 
+.tabs__load-more {
+  display: block;
+  margin: 64px auto 28px auto;
+}
+
 .tabs__label:hover {
   color: var(--text-primary);
 }
@@ -99,7 +104,6 @@
 .tabs__input[id='html-tab']:checked  ~ .tabs__nav .tabs__label[for='html-tab']::after,
 .tabs__input[id='css-tab']:checked ~ .tabs__nav .tabs__label[for='css-tab']::after {
   transform: scaleX(1); 
-  /* color: var(--black); */
 }
 
 .tabs__input[id='all-tab']:checked ~ .tabs__content_all,

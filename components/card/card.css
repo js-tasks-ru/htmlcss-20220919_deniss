@@ -14,6 +14,10 @@
   text-decoration: none;
 }
 
+.card_hidden {
+  display: none;
+}
+
 .card__component {
   display: flex;
   align-items: center;
