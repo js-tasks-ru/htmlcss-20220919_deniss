@@ -19,30 +19,32 @@
                 </use>
               </svg>
             </button>
-            <div class="navbar__logo">
+            <a href="../index.html" class="navbar__logo">
               <div class="navbar__logo-square"></div>
               <div class="navbar__logo-circle"></div>
               <div class="navbar__logo-triangle"></div>
-            </div>
-            <nav class="navbar__links">
-              <a href="#" class="navbar__link navbar__link-active">Components</a>
-              <a href="#" class="navbar__link">About</a>
-              <a href="#" class="navbar__link">Contact</a>
-            </nav>
-            <label class="toggler navbar__theme-changer">
-              <input type="checkbox" class="toggler__input theme_changer">
-              <div class="toggler__state">
-                <div class="toggler__control">
-                  <div class="toggler__circle"></div>
+            </a>
+            <div class="navbar__controls">
+              <nav class="navbar__links">
+                <a href="#" class="navbar__link navbar__link-active">Components</a>
+                <a href="#" class="navbar__link">About</a>
+                <a href="#" class="navbar__link">Contact</a>
+              </nav>
+              <label class="toggler navbar__theme-changer">
+                <input type="checkbox" class="toggler__input theme_changer">
+                <div class="toggler__state">
+                  <div class="toggler__control">
+                    <div class="toggler__circle"></div>
+                  </div>
+                  <svg class="toggler__theme-icon toggler__theme-icon_light-theme">
+                    <use href="../../assets/images/icons-sprite.svg#sun"></use>
+                  </svg>
+                  <svg class="toggler__theme-icon toggler__theme-icon_dark-theme">
+                    <use href="../../assets/images/icons-sprite.svg#moon"></use>
+                  </svg>
                 </div>
-                <svg class="toggler__theme-icon toggler__theme-icon_light-theme">
-                  <use href="../../assets/images/icons-sprite.svg#sun"></use>
-                </svg>
-                <svg class="toggler__theme-icon toggler__theme-icon_dark-theme">
-                  <use href="../../assets/images/icons-sprite.svg#moon"></use>
-                </svg>
-              </div>
-            </label>
+              </label>              
+            </div>
           </div>
           <div class="burger-menu" id="burger-menu">
             <div class="header">

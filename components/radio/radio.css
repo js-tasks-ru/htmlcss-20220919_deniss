@@ -20,7 +20,7 @@
   box-sizing: border-box;
   width: 28px;
   height: 28px;
-  background: var(--white);
+  background: var(--main-bg);
   border: 1px solid var(--text-tertiary);
   border-radius: 14px; 
   position: relative;
