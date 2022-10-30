@@ -1,21 +1,15 @@
 .skeleton {
-  background: var(--white);
+  background: var(--main-bg);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
   padding: 24px 40px 24px 24px;
   box-sizing: border-box;
-  --gradient: linear-gradient(
-    92.51deg,
-    #dde2e5 6.44%,
-    #e2e6e8 38.47%,
-    #f3f5f5 56.48%,
-    #e3e7ea 77.5%,
-    #dde2e5 102.52%
-  );    
+  --offset-width: 80px;    
 }
 
 .skeleton__header {
   display: flex;
+  align-items: center;
   margin-bottom: 24px;
   column-gap: 16px;
 }
@@ -24,7 +18,7 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: var(--gradient);
+  background: var(--gradient-skeleton);
   animation:  backgroundMovement infinite 1.5s linear forwards;
   background-size: 200%;
 }
@@ -37,17 +31,23 @@
   height: 20px;
   margin-top: 8px;
   margin-bottom: 8px;
-  background: var(--gradient);
+  background: var(--gradient-skeleton);
   animation:  backgroundMovement infinite 1.5s linear forwards;
   background-size: 200%;
+  --default-line-width: 100%;
+  width: var(--default-line-width);
 }
 
 .skeleton__line_small {
-  width: 39.74%;
+  width: calc((var(--default-line-width) + var(--offset-width)) * 0.334);
 }
 
 .skeleton__line_medium {
-  width: 59.4%;
+  width: calc((var(--default-line-width) + var(--offset-width)) * 0.5);
+}
+
+.skeleton_preview {
+  width: 100%;
 }
 
 @keyframes backgroundMovement {
@@ -57,5 +57,30 @@
 
   100% {
     background-position: -100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skeleton {
+    --offset-width: 42px;    
+  }
+
+  .skeleton_preview {
+    padding: 12px 20px 12px 12px;
+  }
+
+  .skeleton__header {
+    display: flex;
+    margin-bottom: 0;
+    column-gap: 10px;
+  }
+
+  .skeleton__avatar {
+    width: 32px;
+    height: 32px;  
+  }
+
+  .skeleton__line {
+    height: 10px;
   }
 }

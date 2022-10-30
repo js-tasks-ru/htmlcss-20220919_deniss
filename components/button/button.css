@@ -9,6 +9,7 @@
   box-sizing: border-box; 
   height: 48px;
   cursor: pointer;
+  border: none;
   transition: all 200ms ease-in-out;
 }
 
@@ -35,9 +36,9 @@
 
 .button_alternate {
   box-sizing: border-box;
-  border: 1px solid var(--grey-3); 
+  border: 1px solid var(--text-secondary); 
   background-color: transparent;
-  color: var(--grey-4);
+  color: var(--text-quaternary);
 }
 
 .button:active {
@@ -46,10 +47,23 @@
 
 .button_alternate:hover,
 .button_alternate:active {
-  border-color: var(--black);
+  border-color: var(--text-primary);
 }
 
 .button:disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.button_preview:active {
+  transform: none;
+}
+
+@media screen and (max-width: 768px) {
+  .button_preview {
+    font-size: 10px;
+    font-weight: 300;
+    padding: 0 14px;
+    height: 36px;
+  }
 }
