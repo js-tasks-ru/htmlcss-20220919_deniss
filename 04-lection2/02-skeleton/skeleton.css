@@ -40,14 +40,16 @@
   background: var(--gradient);
   animation:  backgroundMovement infinite 1.5s linear forwards;
   background-size: 200%;
+  --default-line-width: 100%;
+  width: var(--default-line-width);
 }
 
 .skeleton__line_small {
-  width: 39.74%;
+  width: calc((var(--default-line-width) + 80px) * 0.334);
 }
 
 .skeleton__line_medium {
-  width: 59.4%;
+  width: calc((var(--default-line-width) + 80px) * 0.5);
 }
 
 @keyframes backgroundMovement {

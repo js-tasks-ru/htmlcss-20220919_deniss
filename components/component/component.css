@@ -10,7 +10,7 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
-  color: var(--grey-4);
+  color: var(--text-quaternary);
 }
 
 @media screen and (max-width: 768px) {

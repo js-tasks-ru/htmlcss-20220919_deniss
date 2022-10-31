@@ -12,6 +12,9 @@
 @import '../../components/burger-menu/burger-menu.css';
 @import '../../components/histogram/histogram.css';
 @import '../../components/toggler/toggler.css';
+@import '../../components/skeleton/skeleton.css';
+@import '../../components/button/button.css';
+@import '../../components/accordion/accordion.css';
 @import '../../components/calendar/calendar.css';
 @import '../../components/modal/modal.css';
 @import '../../components/avatar/avatar.css';
@@ -46,12 +49,29 @@
   --grey-3-inverted: #534a42;
   --grey-4: #495057;
   --grey-4-inverted: #b6afa8;
-  
+  --preview-background-color: #F9FAFC;
+  --preview-background-color-inverted: #060503; 
+  --gradient-skeleton-light: linear-gradient(
+    92.51deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+  --gradient-skeleton-dark: linear-gradient(
+    92.51deg,
+    #ACB5BD 6.44%,
+    #ACB5BD 38.47%,
+    #ACB5BD 56.48%,
+    #DDE2E5 77.5%,
+    #ACB5BD 102.52%
+  );
+
   --error: var(--red);
   --success: var(--blue);
-  --preview-background-color: #F9FAFC;
-  --preview-background-color-inverted: #060503;
   --main-bg: var(--white);
+  
   --preview-background: var(--preview-background-color);
   --text-primary: var(--black);
   --text-secondary: var(--grey-3);
@@ -64,6 +84,7 @@
   
   --primary: var(--blue);
   --secondary: var(--purple);
+  --gradient-skeleton: var(--gradient-skeleton-light);
 }
 
 html[data-theme-dark] {
@@ -76,7 +97,8 @@ html[data-theme-dark] {
   --card-shadow: var(--card-shadow-color-inverted);
   --calendar-primary: var(--blue-1-inverted);
   --calendar-secondary: var(--blue-2-inverted);
-  --calendar-tertiary: var(--blue-3-inverted);  
+  --calendar-tertiary: var(--blue-3-inverted);
+  --gradient-skeleton: var(--gradient-skeleton-dark);  
 }
 
 body {

@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet" data-type="theme" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet" data-type="theme" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/atom-one-dark.min.css" disabled>
     <link rel="stylesheet" href=".././assets/css/normalize.css">
     <link rel="stylesheet" href=".././assets/css/main.css">
     <title>Component page</title>
@@ -18,30 +19,32 @@
                 </use>
               </svg>
             </button>
-            <div class="navbar__logo">
+            <a href="../index.html" class="navbar__logo">
               <div class="navbar__logo-square"></div>
               <div class="navbar__logo-circle"></div>
               <div class="navbar__logo-triangle"></div>
-            </div>
-            <nav class="navbar__links">
-              <a href="#" class="navbar__link navbar__link-active">Components</a>
-              <a href="#" class="navbar__link">About</a>
-              <a href="#" class="navbar__link">Contact</a>
-            </nav>
-            <label class="toggler navbar__theme-changer">
-              <input type="checkbox" class="toggler__input" id="theme-changer">
-              <div class="toggler__state">
-                <div class="toggler__control">
-                  <div class="toggler__circle"></div>
+            </a>
+            <div class="navbar__controls">
+              <nav class="navbar__links">
+                <a href="#" class="navbar__link navbar__link-active">Components</a>
+                <a href="#" class="navbar__link">About</a>
+                <a href="#" class="navbar__link">Contact</a>
+              </nav>
+              <label class="toggler navbar__theme-changer">
+                <input type="checkbox" class="toggler__input theme_changer">
+                <div class="toggler__state">
+                  <div class="toggler__control">
+                    <div class="toggler__circle"></div>
+                  </div>
+                  <svg class="toggler__theme-icon toggler__theme-icon_light-theme">
+                    <use href="../../assets/images/icons-sprite.svg#sun"></use>
+                  </svg>
+                  <svg class="toggler__theme-icon toggler__theme-icon_dark-theme">
+                    <use href="../../assets/images/icons-sprite.svg#moon"></use>
+                  </svg>
                 </div>
-                <svg class="toggler__theme-icon toggler__theme-icon_light-theme">
-                  <use href="../../assets/images/icons-sprite.svg#sun"></use>
-                </svg>
-                <svg class="toggler__theme-icon toggler__theme-icon_dark-theme">
-                  <use href="../../assets/images/icons-sprite.svg#moon"></use>
-                </svg>
-              </div>
-            </label>
+              </label>              
+            </div>
           </div>
           <div class="burger-menu" id="burger-menu">
             <div class="header">
@@ -66,7 +69,7 @@
               <div class="burger-menu__theme">
                 <p class="burger-menu__theme-text">Dark mode</p>
                 <label class="toggler">
-                  <input type="checkbox" class="toggler__input">
+                  <input type="checkbox" class="toggler__input theme_changer">
                   <div class="toggler__state">
                     <div class="toggler__control">
                       <div class="toggler__circle"></div>
@@ -95,6 +98,15 @@
                 </li>
                 <li class="burger-menu__item">
                   <a href="#" class="burger-menu__link">Custom form elements</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#" class="burger-menu__link">Buttons</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#" class="burger-menu__link">Accordion</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#" class="burger-menu__link">Skeleton</a>
                 </li>
                 <li class="burger-menu__item">
                   <a href="#" class="burger-menu__link">Main page</a>

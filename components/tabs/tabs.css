@@ -6,6 +6,16 @@
   margin-bottom: 5px;
 }
 
+.tabs__nav {
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.tabs__nav::-webkit-scrollbar { 
+  display: none; /* Safari and Chrome */
+}
+
 .tabs__input {
   position: absolute;
   outline: none;
@@ -62,7 +72,7 @@
 }
 
 .tabs__code-wrapper .tabs__code {
-  background: var(--white);
+  background: var(--main-bg);
   padding: 0;
 }
 
@@ -74,6 +84,11 @@
   display: none;
 }
 
+.tabs__load-more {
+  display: block;
+  margin: 64px auto 28px auto;
+}
+
 .tabs__label:hover {
   color: var(--text-primary);
 }
@@ -81,7 +96,7 @@
 .tabs__content_html,
 .tabs__content_css {
   padding: 50px 48px 64px 48px;
-  background: var(--white);
+  background: var(--main-bg);
 }
 
 .tabs__input[id='all-tab']:checked  ~ .tabs__nav .tabs__label[for='all-tab'],
@@ -99,12 +114,11 @@
 .tabs__input[id='html-tab']:checked  ~ .tabs__nav .tabs__label[for='html-tab']::after,
 .tabs__input[id='css-tab']:checked ~ .tabs__nav .tabs__label[for='css-tab']::after {
   transform: scaleX(1); 
-  color: var(--black);
 }
 
 .tabs__input[id='all-tab']:checked ~ .tabs__content_all,
-.tabs__input[id='complex-tab']:checked ~ .tabs__content_simple,
-.tabs__input[id='simple-tab']:checked ~ .tabs__content_complex,
+.tabs__input[id='simple-tab']:checked ~ .tabs__content_simple,
+.tabs__input[id='complex-tab']:checked ~ .tabs__content_complex,
 .tabs__input[id='html-tab']:checked ~ .tabs__content_html,
 .tabs__input[id='css-tab']:checked ~ .tabs__content_css {
   display: block;
@@ -118,7 +132,6 @@
   .tabs__content_html,
   .tabs__content_css {
     padding: 25px 24px 32px 16px;
-    background: var(--white);
   }
 
   .tabs__item:not(:last-child) {

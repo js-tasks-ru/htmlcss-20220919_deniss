@@ -31,7 +31,6 @@
 
 .navbar__logo {
   display: flex;
-  flex-grow: 1;
 }
 
 .navbar__logo-square {
@@ -54,6 +53,10 @@
   height: 0;
   border-bottom: 32px solid var(--text-primary);
   border-right: 32px solid transparent;
+}
+
+.navbar__controls {
+  display: flex;
 }
 
 .navbar__links {
@@ -101,12 +104,7 @@
     display: inline-block;
   }
 
-  .navbar__logo {
-    flex-grow: unset;
-  }
-
-  .navbar__links,
-  .navbar .navbar__theme-changer {
+  .navbar__controls {
     display: none;
   }
 }
