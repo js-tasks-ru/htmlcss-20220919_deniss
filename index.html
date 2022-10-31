@@ -416,8 +416,291 @@
               <button class="button button_alternate button_load-more tabs__load-more">Load more</button>
             </div>
           </div><!--TAB_ALL-->
-          <div class="tabs__content tabs__content_simple"></div><!--TAB_SIMPLE-->
-          <div class="tabs__content tabs__content_complex"></div><!--TAB_COMPLEX-->
+          <div class="tabs__content tabs__content_simple">
+            <div class="container">
+              <div class="preview__cards">
+                <a href="#" class="card">
+                  <div class="card__component">
+                    <div class="tooltip tooltip_preview">
+                      <svg class="tooltip__trigger">
+                        <use href="../../assets/images/icons-sprite.svg#question"></use>
+                      </svg>
+                      <div class="tooltip__helper">Helper Text</div>
+                    </div>
+                  </div>
+                  <div class="card__delimiter"></div>
+                  <div class="card__title">Tooltip</div>
+                  <div class="card__type">Simple</div>
+                </a>
+                <a href="#" class="card">
+                  <div class="card__component card__component_grid">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input">
+                      <div class="checkbox__state">
+                        <div class="checkbox__control">
+                          <svg class="checkbox__icon">
+                              <use href="../../assets/images/icons-sprite.svg#checkmark"></use>
+                          </svg> 
+                        </div>
+                        <div class="checkbox__title">Default</div>
+                      </div>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" class="radio__input" name="radio-group">
+                      <div class="radio__state">
+                        <div class="radio__control">
+                          <div class="radio__circle"></div>
+                        </div>
+                        <div class="radio__title">Default</div>
+                      </div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input" checked>
+                        <div class="checkbox__state">
+                          <div class="checkbox__control">
+                            <svg class="checkbox__icon">
+                                <use href="../../assets/images/icons-sprite.svg#checkmark"></use>
+                            </svg> 
+                          </div>
+                          <div class="checkbox__title">Checked</div>
+                        </div>
+                      </label>
+                      <label class="radio">
+                        <input type="radio" class="radio__input" name="radio-group" checked>
+                        <div class="radio__state">
+                          <div class="radio__control">
+                            <div class="radio__circle"></div>
+                          </div>
+                          <div class="radio__title">Selected</div>
+                        </div>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input" disabled>
+                        <div class="checkbox__state">
+                          <div class="checkbox__control">
+                            <svg class="checkbox__icon">
+                                <use href="../../assets/images/icons-sprite.svg#checkmark"></use>
+                            </svg> 
+                          </div>
+                          <div class="checkbox__title">Disabled</div>
+                        </div>
+                      </label>
+                      <label class="radio">
+                        <input type="radio" class="radio__input" name="radio-group" disabled>
+                        <div class="radio__state">
+                          <div class="radio__control">
+                            <div class="radio__circle"></div>
+                          </div>
+                          <div class="radio__title">Disabled</div>
+                        </div>
+                      </label>
+                  </div>
+                  <div class="card__delimiter"></div>
+                  <h4 class="card__title">Custom form elements</h4>
+                  <div class="card__type">Simple</div>
+                </a>
+                <a href="#" class="card">
+                  <div class="card__component">
+                    <div class="modal modal_preview">
+                      <div class="modal__window">
+                        <div class="modal__header">
+                          <div class="modal__title">Title</div>  
+                          <svg id="modal-close" class="modal__close">
+                            <use href="../../assets/images/icons-sprite.svg#close"></use>
+                          </svg>        
+                        </div>
+                        <div class="modal__text">Description</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__delimiter"></div>
+                  <div class="card__title">Modal dialog</div>
+                  <div class="card__type">Simple</div>
+                </a>
+                <a href="#" class="card">
+                  <div class="card__component">
+                    <div class="avatar">
+                      <img class="avatar__img" src="../../assets/images/avatar-200.jpg" alt="avatar">
+                    </div>
+                  </div>
+                  <div class="card__delimiter"></div>
+                  <div class="card__title">Avatar</div>
+                  <div class="card__type">Simple</div>
+                </a>
+                <a href="#" class="card">
+                  <div class="card__component card__component_grid">
+                    <button class="button button_primary button_preview ">Primary</button>
+                    <button class="button button_primary button_preview " disabled>Disabled</button>
+                    <button class="button button_secondary button_preview ">Secondary</button>
+                    <button class="button button_secondary button_preview " disabled>Disabled</button>
+                    <button class="button button_alternate button_preview ">Alternate</button>
+                    <button class="button button_alternate button_preview " disabled>Disabled</button>
+                  </div>
+                  <div class="card__delimiter"></div>
+                  <div class="card__title">Buttons</div>
+                  <div class="card__type">Simple</div>
+                </a>
+                <a href="#" class="card">
+                  <div class="card__component card__component_flex-column">
+                    <details class="accordion__item accordion_preview">
+                      <summary class="accordion__summary">
+                        <p class="accordion__title">Accordion item 1</p>
+                        <svg class="accordion__arrow">
+                          <use href="../../assets/images/icons-sprite.svg#arrow-down"></use>
+                        </svg> 
+                      </summary>
+                      <p class="accordion__content">Detailed description</p>
+                    </details>
+                    <details class="accordion__item accordion_preview" open>
+                      <summary class="accordion__summary">
+                        <p class="accordion__title">Accordion item 2</p>
+                        <svg class="accordion__arrow">
+                          <use href="../../assets/images/icons-sprite.svg#arrow-down"></use>
+                        </svg> 
+                      </summary>
+                      <p class="accordion__content">Detailed description</p>
+                    </details>
+                  </div>
+                  <div class="card__delimiter"></div>
+                  <div class="card__title">Accordion</div>
+                  <div class="card__type">Simple</div>
+                </a>
+              </div>
+            </div>          
+          </div><!--TAB_SIMPLE-->
+          <div class="tabs__content tabs__content_complex">
+            <div class="container">
+              <div class="preview__cards">
+                <a href="#" class="card">
+                  <div class="card__component">
+                    <div class="calendar calendar_preview">
+                      <div class="calendar__title">October 2022</div>
+                      <div class="calendar__wrapper">
+                          <div class="calendar__inner">
+                            <span class="calendar__item calendar__item_day">Mon</span>
+                            <span class="calendar__item calendar__item_day">Tue</span> 
+                            <span class="calendar__item calendar__item_day">Wed</span> 
+                            <span class="calendar__item calendar__item_day">Thu</span> 
+                            <span class="calendar__item calendar__item_day">Fri</span> 
+                            <span class="calendar__item calendar__item_day">Sat</span> 
+                            <span class="calendar__item calendar__item_day">Sun</span>      
+                            <span class="calendar__item"></span>
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item">1</span> 
+                            <span class="calendar__item">2</span>
+                            <span class="calendar__item">3</span>
+                            <span class="calendar__item">4</span> 
+                            <span class="calendar__item">5</span> 
+                            <span class="calendar__item">6</span> 
+                            <span class="calendar__item">7</span> 
+                            <span class="calendar__item">8</span> 
+                            <span class="calendar__item">9</span>
+                            <span class="calendar__item">10</span>
+                            <span class="calendar__item">11</span> 
+                            <span class="calendar__item">12</span> 
+                            <span class="calendar__item">13</span> 
+                            <span class="calendar__item">14</span> 
+                            <span class="calendar__item">15</span> 
+                            <span class="calendar__item">16</span>       
+                            <span class="calendar__item">17</span>
+                            <span class="calendar__item calendar__item_chosen">18</span> 
+                            <span class="calendar__item calendar__item_between">19</span> 
+                            <span class="calendar__item calendar__item_between">20</span> 
+                            <span class="calendar__item calendar__item_between">21</span> 
+                            <span class="calendar__item calendar__item_between">22</span> 
+                            <span class="calendar__item calendar__item_chosen">23</span>       
+                            <span class="calendar__item">24</span>
+                            <span class="calendar__item">25</span> 
+                            <span class="calendar__item">26</span> 
+                            <span class="calendar__item">27</span> 
+                            <span class="calendar__item">28</span> 
+                            <span class="calendar__item">29</span> 
+                            <span class="calendar__item">30</span>       
+                            <span class="calendar__item">31</span>
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span> 
+                            <span class="calendar__item"></span>                       
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__delimiter"></div>
+                  <div class="card__title">Calendar</div>
+                  <div class="card__type">Complex</div>
+                </a>
+                <a href="#" class="card">
+                  <div class="card__component">
+                    <div class="histogram histogram_preview">
+                      <div class="histogram__header">
+                        <p class="histogram__title">Total orders</p>
+                        <div href="#" class="histogram__link">View all</div>
+                      </div>
+                      <h4 class="histogram__total">50254</h4>
+                      <div class="histogram__column-chart">
+                        <div class="histogram__column" style="height: 100%;"></div>
+                        <div class="histogram__column" style="height: 80%;"></div>
+                        <div class="histogram__column" style="height: 14%;"></div>
+                        <div class="histogram__column" style="height: 19%;"></div>
+                        <div class="histogram__column" style="height: 37%;"></div>
+                        <div class="histogram__column" style="height: 89%;"></div>
+                        <div class="histogram__column" style="height: 51%;"></div>
+                        <div class="histogram__column" style="height: 60%;"></div>
+                        <div class="histogram__column" style="height: 71%;"></div>
+                        <div class="histogram__column" style="height: 29%;"></div>
+                        <div class="histogram__column" style="height: 100%;"></div>
+                        <div class="histogram__column" style="height: 52%;"></div>
+                        <div class="histogram__column" style="height: 31%;"></div>
+                        <div class="histogram__column" style="height: 16%;"></div>
+                        <div class="histogram__column" style="height: 37%;"></div>
+                        <div class="histogram__column" style="height: 99%;"></div>
+                        <div class="histogram__column" style="height: 31%;"></div>
+                        <div class="histogram__column" style="height: 62%;"></div>
+                        <div class="histogram__column" style="height: 11%;"></div>
+                        <div class="histogram__column" style="height: 39%;"></div>
+                        <div class="histogram__column" style="height: 100%;"></div>
+                        <div class="histogram__column" style="height: 52%;"></div>
+                        <div class="histogram__column" style="height: 77%;"></div>
+                        <div class="histogram__column" style="height: 20%;"></div>
+                        <div class="histogram__column" style="height: 33%;"></div>
+                        <div class="histogram__column" style="height: 44%;"></div>
+                        <div class="histogram__column" style="height: 22%;"></div>
+                        <div class="histogram__column" style="height: 72%;"></div>
+                        <div class="histogram__column" style="height: 31%;"></div>
+                        <div class="histogram__column" style="height: 89%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__delimiter"></div>
+                  <div class="card__title">Histogram</div>
+                  <div class="card__type">Complex</div>
+                </a>
+                <a href="#" class="card">
+                  <div class="card__component">
+                    <div class="skeleton skeleton_preview">
+                      <div class="skeleton__header">
+                        <div class="skeleton__avatar"></div>
+                        <div class="skeleton__info">
+                          <div class="skeleton__line skeleton__line_small"></div>
+                          <div class="skeleton__line skeleton__line_medium"></div>            
+                        </div>
+                      </div>
+                      <div class="skeleton__line"></div>
+                      <div class="skeleton__line"></div>
+                    </div> 
+                  </div>
+                  <div class="card__delimiter"></div>
+                  <div class="card__title">Skeleton</div>
+                  <div class="card__type">Complex</div>
+                </a>
+              </div>
+            </div>
+          </div><!--TAB_COMPLEX-->
         </div> <!--TABS-->
       </main>
       <footer class="footer">

@@ -117,8 +117,8 @@
 }
 
 .tabs__input[id='all-tab']:checked ~ .tabs__content_all,
-.tabs__input[id='complex-tab']:checked ~ .tabs__content_simple,
-.tabs__input[id='simple-tab']:checked ~ .tabs__content_complex,
+.tabs__input[id='simple-tab']:checked ~ .tabs__content_simple,
+.tabs__input[id='complex-tab']:checked ~ .tabs__content_complex,
 .tabs__input[id='html-tab']:checked ~ .tabs__content_html,
 .tabs__input[id='css-tab']:checked ~ .tabs__content_css {
   display: block;
