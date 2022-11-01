@@ -21,7 +21,7 @@
   width: 28px;
   height: 28px;
   background: var(--main-bg);
-  border: 1px solid var(--text-tertiary);
+  border: 1px solid var(--grey-2);
   border-radius: 14px; 
   position: relative;
 }
@@ -65,11 +65,12 @@
 }
 
 .radio__input:disabled ~ .radio__state .radio__control {
-  background: var(--text-tertiary);
+  border: var(--grey-2);
+  background: var(--disabled-form-element);
 }
 
 .radio__input:disabled ~ .radio__state .radio__title {
-  color: var(--text-tertiary);
+  color: var(--disabled-form-element);
 }
 
 @media screen and (max-width: 768px) {
