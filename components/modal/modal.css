@@ -5,7 +5,8 @@
     left: 0px;
     width: 100%;
     min-height: 100%;
-    background-color: rgba(196, 196, 196, 0.5); 
+    background-color: rgba(196, 196, 196, 0.5);
+    z-index: 9999; 
   }
   
   .modal__window {

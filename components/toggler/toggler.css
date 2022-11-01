@@ -98,3 +98,31 @@
 .toggler__input:disabled ~ .toggler__state .toggler__title {
   color: var(--grey-2);
 }
+
+@media screen and (max-width: 768px) {
+  .toggler__state {
+    gap: 6px;
+  }
+  
+  .toggler__control {
+    width: 24px;
+    height: 14px;
+  }
+
+  .toggler__circle {
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    background: var(--grey-2);
+    border-radius: 16px;
+  }
+
+  .toggler__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--text-quaternary);
+  }
+}

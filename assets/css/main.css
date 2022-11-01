@@ -23,6 +23,7 @@
 @import '../../components/tabs/tabs.css';
 @import '../../components/checkbox/checkbox.css';
 @import '../../components/radio/radio.css';
+@import '../../components/input/input.css';
 
 :root {
   --white: #ffffff;

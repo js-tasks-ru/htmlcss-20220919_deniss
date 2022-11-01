@@ -93,3 +93,7 @@
 .burger-menu__link:active {
   color: var(--orange);
 }
+
+.burger-menu__link:not([href]) {
+  pointer-events: none;
+}

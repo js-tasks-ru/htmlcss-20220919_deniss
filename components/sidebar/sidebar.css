@@ -34,6 +34,18 @@
   width: 229px;
 }
 
+.sidebar__item:hover {
+  opacity: 0.8;
+}
+
+.sidebar__item:active {
+  color: var(--orange);
+}
+
+.sidebar__item:not([href]) {
+  pointer-events: none;
+}
+
 @media screen and (max-width: 768px) {
   .sidebar_component-page {
     display: none;
