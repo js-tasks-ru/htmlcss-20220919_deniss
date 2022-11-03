@@ -20,17 +20,17 @@
   line-height: 18px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--grey-3);
+  color: var(--input-label-color);
   margin-bottom: 5px;
 }
 
 .input-form__text {
   box-sizing: border-box;
-  background: var(--white);
-  border: 1px solid var(--grey-2);
+  background: var(--main-bg);
+  border: 1px solid var(--input-color);
   border-radius: 8px;
   line-height: 26px;
-  color: var(--grey-4);
+  color: var(--text-quaternary);
   padding: 17px 0 13px 24px;
   width: 100%;
   transition: border-color 200ms ease-out;
@@ -38,7 +38,7 @@
 
 .input-form__text::placeholder {
   line-height: 26px;
-  color: var(--grey-2);
+  color: var(--input-color);
 }
 
 .input-form__icon {
@@ -49,7 +49,7 @@
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--white);
+  color: var(--main-bg);
 }
 
 .input-form__text:focus {

@@ -100,7 +100,7 @@
                   <a href="./custom-form-elements.html" class="burger-menu__link">Custom form elements</a>
                 </li>
                 <li class="burger-menu__item">
-                  <a href="./buttons.html" class="burger-menu__link">Buttons</a>
+                  <a class="burger-menu__link">Buttons</a>
                 </li>
                 <li class="burger-menu__item">
                   <a href="./accordion.html" class="burger-menu__link">Accordion</a>
@@ -128,7 +128,7 @@
                 <a href="./calendar.html" class="sidebar__item">Calendar</a>
                 <a href="./histogram.html" class="sidebar__item">Histogram</a>
                 <a href="./custom-form-elements.html" class="sidebar__item">Custom form elements</a>
-                <a href="./buttons.html" class="sidebar__item">Buttons</a>
+                <a class="sidebar__item">Buttons</a>
                 <a href="./accordion.html" class="sidebar__item">Accordion</a>
                 <a href="./skeleton.html" class="sidebar__item">Skeleton</a>
                 <a href="../index.html" class="sidebar__item">Main page</a>
@@ -136,45 +136,14 @@
             </aside>
             <main class="content page__content">
               <div class="component">
-                <h3 class="component__title">Histogram</h3>
-                <div class="histogram">
-                  <div class="histogram__header">
-                    <p class="histogram__title">Total orders</p>
-                    <a href="#" class="histogram__link">View all</a>
-                  </div>
-                  <h4 class="histogram__total">50254</h4>
-                  <div class="histogram__column-chart">
-                    <div class="histogram__column" style="height: 100%;"></div>
-                    <div class="histogram__column" style="height: 80%;"></div>
-                    <div class="histogram__column" style="height: 14%;"></div>
-                    <div class="histogram__column" style="height: 19%;"></div>
-                    <div class="histogram__column" style="height: 37%;"></div>
-                    <div class="histogram__column" style="height: 89%;"></div>
-                    <div class="histogram__column" style="height: 51%;"></div>
-                    <div class="histogram__column" style="height: 60%;"></div>
-                    <div class="histogram__column" style="height: 71%;"></div>
-                    <div class="histogram__column" style="height: 29%;"></div>
-                    <div class="histogram__column" style="height: 100%;"></div>
-                    <div class="histogram__column" style="height: 52%;"></div>
-                    <div class="histogram__column" style="height: 31%;"></div>
-                    <div class="histogram__column" style="height: 16%;"></div>
-                    <div class="histogram__column" style="height: 37%;"></div>
-                    <div class="histogram__column" style="height: 99%;"></div>
-                    <div class="histogram__column" style="height: 31%;"></div>
-                    <div class="histogram__column" style="height: 62%;"></div>
-                    <div class="histogram__column" style="height: 11%;"></div>
-                    <div class="histogram__column" style="height: 39%;"></div>
-                    <div class="histogram__column" style="height: 100%;"></div>
-                    <div class="histogram__column" style="height: 52%;"></div>
-                    <div class="histogram__column" style="height: 77%;"></div>
-                    <div class="histogram__column" style="height: 20%;"></div>
-                    <div class="histogram__column" style="height: 33%;"></div>
-                    <div class="histogram__column" style="height: 44%;"></div>
-                    <div class="histogram__column" style="height: 22%;"></div>
-                    <div class="histogram__column" style="height: 72%;"></div>
-                    <div class="histogram__column" style="height: 31%;"></div>
-                    <div class="histogram__column" style="height: 89%;"></div>
-                  </div>
+                <h3 class="component__title">Buttons</h3>
+                <div class="component__grid">
+                  <button class="button button_primary">Primary</button>
+                  <button class="button button_primary" disabled>Primary disabled</button>
+                  <button class="button button_secondary">Secondary</button>
+                  <button class="button button_secondary" disabled>Secondary disabled</button>
+                  <button class="button button_alternate">Alternate</button>
+                  <button class="button button_alternate" disabled>Alternate disabled</button>                  
                 </div>
               </div>
               <div class="tabs">
@@ -192,117 +161,84 @@
                 </nav>
                 <div class="tabs__delimiter"></div>
                 <div class="tabs__content tabs__content_html">
-                  <pre class="tabs__code-wrapper"><code class="tabs__code">&lt;div class=&quot;histogram&quot;&gt;
-  &lt;div class=&quot;histogram__header&quot;&gt;
-    &lt;p class=&quot;histogram__title&quot;&gt;Total orders&lt;/p&gt;
-    &lt;a href=&quot;#&quot; class=&quot;histogram__link&quot;&gt;View all&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;h4 class=&quot;histogram__total&quot;&gt;50254&lt;/h4&gt;
-  &lt;div class=&quot;histogram__column-chart&quot;&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 100%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 80%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 14%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 19%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 37%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 89%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 51%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 60%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 71%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 29%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 100%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 52%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 31%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 16%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 37%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 99%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 31%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 62%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 11%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 39%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 100%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 52%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 77%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 20%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 33%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 44%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 22%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 72%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 31%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__column&quot; style=&quot;height: 89%;&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+                  <pre class="tabs__code-wrapper"><code class="tabs__code">&lt;button class=&quot;button button_primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;button button_primary&quot; disabled&gt;Primary disabled&lt;/button&gt;
+&lt;button class=&quot;button button_secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;button button_secondary&quot; disabled&gt;Secondary disabled&lt;/button&gt;
+&lt;button class=&quot;button button_alternate&quot;&gt;Alternate&lt;/button&gt;
+&lt;button class=&quot;button button_alternate&quot; disabled&gt;Alternate disabled&lt;/button&gt;</code></pre>
                 </div>
-                <div class="tabs__content tabs__content_css"><pre class="tabs__code-wrapper"><code class="tabs__code">.histogram {
-  width: 100%;
-  background: var(--white);
-  border: 1px solid var(--grey-3);
+                <div class="tabs__content tabs__content_css"><pre class="tabs__code-wrapper"><code class="tabs__code">.button {
   border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  box-sizing: border-box; 
+  height: 48px;
+  cursor: pointer;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+
+.button_primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.button_primary:hover,
+.button_primary:active
+{
+  background-color: var(--dark-blue);
+}
+
+.button_secondary {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.button_secondary:hover,
+.button_secondary:active {
+  background-color: var(--dark-purple);
+}
+
+.button_alternate {
   box-sizing: border-box;
-  padding: 16px 24px 24px 24px;
-  --max-column-height: 50px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
+  border: 1px solid var(--text-secondary); 
+  background-color: transparent;
+  color: var(--text-quaternary);
 }
 
-.histogram__header {
-  display: flex;
-  justify-content: space-between;
+.button:active {
+  transform: translateY(4px);
 }
 
-.histogram__title {
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--black);
-  opacity: 0.8;
-  margin: 0;
+.button_alternate:hover,
+.button_alternate:active {
+  border-color: var(--text-primary);
 }
 
-.histogram__link {
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--blue);
-  margin-top: 3px;
+.button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
-.histogram__total {
-  font-size: 20px;
-  line-height: 26px;
-  color: var(--black);
-  margin: 6px 0 39px 0;
-}
-
-.histogram__column-chart {
-  display: flex;
-  align-items: flex-end;
-  height: var(--max-column-height);
-  padding-left: 1px;
-}
-
-.histogram__column {
-  flex-grow: 1;
-  flex-basis: 9px;
-  margin-left: 1px;
-  background-color: var(--blue);
+.button_preview:active {
+  transform: none;
 }
 
 @media screen and (max-width: 768px) {
-  .histogram_preview {
-    padding: 6px 8px 8px;
-    width: 90%;
-    --max-column-height: 35px;
+  .button {
+    padding: 0 14px;
   }
 
-  .histogram_preview .histogram__total {
-    margin: 0;
+  .button_preview {
     font-size: 10px;
-  }
-
-  .histogram_preview .histogram__title,
-  .histogram_preview .histogram__link {
-    font-size: 10px;
-    line-height: normal;
-  }
+    font-weight: 300;
+    height: 36px;
+  }  
 }</code></pre></div>
               </div>
             </main>

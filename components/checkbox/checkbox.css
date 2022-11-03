@@ -21,7 +21,7 @@
   width: 28px;
   height: 28px;
   background: var(--main-bg);
-  border: 1px solid var(--text-tertiary);
+  border: 1px solid var(--grey-2);
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -63,11 +63,12 @@
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__control {
-  background: var(--text-tertiary);
+  border: var(--disabled-form-element);
+  background: var(--disabled-form-element);
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__title {
-  color: var(--text-tertiary);
+  color: var(--disabled-form-element);
 }
 
 @media screen and (max-width: 768px) {

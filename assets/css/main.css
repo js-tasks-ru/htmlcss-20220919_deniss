@@ -23,6 +23,7 @@
 @import '../../components/tabs/tabs.css';
 @import '../../components/checkbox/checkbox.css';
 @import '../../components/radio/radio.css';
+@import '../../components/input/input.css';
 
 :root {
   --white: #ffffff;
@@ -49,6 +50,8 @@
   --grey-3-inverted: #534a42;
   --grey-4: #495057;
   --grey-4-inverted: #b6afa8;
+  --disabled-form-element-color: #DDE2E5;
+  --disabled-form-element-inverted: #495057;
   --preview-background-color: #F9FAFC;
   --preview-background-color-inverted: #060503; 
   --gradient-skeleton-light: linear-gradient(
@@ -80,7 +83,10 @@
   --card-shadow: var(--card-shadow-color);
   --calendar-primary: var(--blue-1);
   --calendar-secondary: var(--blue-2);
-  --calendar-tertiary: var(--blue-3);  
+  --calendar-tertiary: var(--blue-3);
+  --disabled-form-element: var(--disabled-form-element-color);
+  --input-color: var(--grey-2);
+  --input-label-color: var(--grey-3);  
   
   --primary: var(--blue);
   --secondary: var(--purple);
@@ -98,7 +104,10 @@ html[data-theme-dark] {
   --calendar-primary: var(--blue-1-inverted);
   --calendar-secondary: var(--blue-2-inverted);
   --calendar-tertiary: var(--blue-3-inverted);
-  --gradient-skeleton: var(--gradient-skeleton-dark);  
+  --gradient-skeleton: var(--gradient-skeleton-dark);
+  --disabled-form-element: var(--disabled-form-element-inverted);
+  --input-color: var(--grey-3-inverted);
+  --input-label-color: var(--grey-4-inverted);    
 }
 
 body {

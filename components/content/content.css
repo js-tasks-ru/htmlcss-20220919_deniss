@@ -11,6 +11,6 @@
 
 @media screen and (max-width: 768px) {
   .content__nav {
-    padding-left: 0px;
+    padding-left: 16px;
   }
 }

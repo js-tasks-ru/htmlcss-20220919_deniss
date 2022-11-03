@@ -22,7 +22,7 @@
   align-items: center;
   width: 52px;
   height: 28px;
-  background: var(--white);
+  background: var(--main-bg);
   border: 1px solid var(--grey-2);
   border-radius: 16px;
   padding: 1px;
@@ -44,7 +44,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-4);
+  color: var(--text-quaternary);
 }
 
 .toggler__theme-icon {
@@ -87,7 +87,8 @@
 }
 
 .toggler__input:disabled ~ .toggler__state .toggler__control {
-  background: var(--grey-2);
+  border: var(--grey-2);
+  background: var(--disabled-form-element);
 }
 
 .toggler__input:disabled ~ .toggler__state .toggler__circle {
@@ -96,5 +97,33 @@
 }
 
 .toggler__input:disabled ~ .toggler__state .toggler__title {
-  color: var(--grey-2);
+  color: var(--disabled-form-element);
+}
+
+@media screen and (max-width: 768px) {
+  .toggler__state {
+    gap: 6px;
+  }
+  
+  .toggler__control {
+    width: 24px;
+    height: 14px;
+  }
+
+  .toggler__circle {
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    background: var(--grey-2);
+    border-radius: 16px;
+  }
+
+  .toggler__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--text-quaternary);
+  }
 }
